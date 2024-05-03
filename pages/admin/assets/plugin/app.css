@@ -1,0 +1,37 @@
+:root {
+    --primary: #BF0BFF;
+    --secondary: #180020;
+    --third: #F6610D;
+    --third2: #C15010;
+    --fourth: #F60D0D;
+    --fourth2: #C11010;
+    --fifth: #0ea501;
+    --fifth2: #085c00;
+    --status-chat-on: #7e7e7e;
+    --status-chat-off: #585858;
+    --footer: #340046;
+    --border-radius: .3rem;
+    --bg: #DFDFDF;
+    --color-font: #0C0030;
+    --color-font2: #FFFFFF;
+    --active-sidebar: #4B4755;
+    --card-color: #FCFCFC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-font);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+    min-height: 100vh;
+}

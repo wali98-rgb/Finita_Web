@@ -1,0 +1,83 @@
+/* Embed Map CSS */
+.embed-map {
+    padding: 6rem 5% 2rem;
+    height: 30rem;
+}
+
+.embed-map iframe {
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 5px var(--color-font);
+}
+/* Embed Map CSS */
+
+/* Message Session CSS */
+.message {
+    padding: 2rem 3%;
+    background-color: var(--primary);
+}
+
+.message .title {
+    padding: .5rem 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.message .form {
+    padding: .5rem 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.message .form form {
+    width: 70%;
+}
+
+.message .form form .inp-col-1 {
+    display: flex;
+}
+
+.message .form form .inp-col-1 .form-inp {
+    margin: 0 .5rem;
+    padding: .5rem 0;
+    width: 50%;
+}
+
+.message .form form .inp-col-1 .form-inp input {
+    padding: 1rem;
+    width: 100%;
+    border: 2px solid silver;
+    border-radius: var(--border-radius);
+    color: var(--color-font);
+    box-sizing: border-box;
+}
+
+.message .form form .inp-col-2 .form-inp, .inp-col-3 .form-inp {
+    margin: 0 .5rem;
+    padding: .5rem 0;
+}
+
+.message .form form .inp-col-2 .form-inp input, .inp-col-3 .form-inp textarea {
+    padding: 1rem;
+    width: 100%;
+    border: 2px solid silver;
+    border-radius: var(--border-radius);
+    color: var(--color-font);
+    box-sizing: border-box;
+}
+
+.message .form form .inp-btn .form-submit {
+    margin: 0 .5rem;
+    padding: .5rem 0;
+}
+
+.message .form form .inp-btn .form-submit input {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--fourth);
+    color: var(--color-font2);
+}
+/* Message Session CSS */

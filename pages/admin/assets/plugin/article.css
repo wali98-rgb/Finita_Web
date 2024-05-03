@@ -1,0 +1,304 @@
+.page {
+    display: flex;
+}
+
+.page .main {
+    padding: 0 0 0 17.9rem;
+    width: 100%;
+}
+
+.page .main .content .header-content {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .main .content .header-content h1 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Container Session Start */
+.page .main .content .container {
+    margin: 0 1.5rem 4rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+}
+
+.page .main .content .container .header-container {
+    padding: 0 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-font);
+}
+
+.page .main .content .container .header-container a {
+    padding: .2rem .7rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: green;
+    border-radius: var(--border-radius);
+    color: var(--color-font2);
+}
+
+.page .main .content .container .header-container a i {
+    margin: 0 .5rem 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-font2);
+}
+
+.page .main .content .container .header-container form {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.page .main .content .container .header-container form input {
+    margin: 0 .5rem 0 0;
+    padding: .3rem .5rem;
+    border: 2px solid var(--bg);
+    border-radius: var(--border-radius);
+    color: var(--color-font);
+}
+
+.page .main .content .container .header-container form button {
+    padding: .2rem .7rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    background-color: blue;
+    border-radius: var(--border-radius);
+    color: var(--color-font2);
+}
+
+/* Card Body CSS */
+.page .main .content .container .body-container .card-article {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .main .content .container .body-container .card-article .card-img {
+    display: flex;
+    align-items: center;
+    width: 27%;
+    height: 11.5rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.page .main .content .container .body-container .card-article .potrait-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29%;
+    height: 11.5rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.page .main .content .container .body-container .card-article .card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+.page .main .content .container .body-container .card-article .potrait-img img {
+    width: 50%;
+    border-radius: var(--border-radius);
+}
+
+.page .main .content .container .body-container .card-article .card-body {
+    width: 50%;
+}
+
+.page .main .content .container .body-container .card-article .card-body h1 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.page .main .content .container .body-container .card-article .card-body span {
+    font-size: .9rem;
+}
+
+.page .main .content .container .body-container .card-article .card-body p {
+    margin: .5rem 0 0;
+    padding: .5rem 0 0;
+    text-align: justify;
+    border-top: 2px solid var(--color-font);
+    line-height: 1.3rem;
+}
+
+.page .main .content .container .body-container .card-article .card-btn {
+    padding: 0 0 0 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 10rem;
+    border-left: 2px solid var(--color-font);
+}
+
+.page .main .content .container .body-container .card-article .card-btn ul li {
+    margin: .5rem 0;
+}
+
+.page .main .content .container .body-container .card-article .card-btn ul li a {
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+}
+
+.page .main .content .container .body-container .card-article .card-btn ul li a i {
+    margin: 0 .5rem 0 0;
+    font-size: 1.2rem;
+}
+/* Card Body CSS */
+
+/* Create & Update Article CSS */
+.page .main .content .container .body-container form {
+    padding: 1rem 0 0;
+}
+
+.page .main .content .container .body-container form .inp-col-1 {
+    display: flex;
+}
+
+.page .main .content .container .body-container form .inp-col-1 .form-inp {
+    margin: .5rem;
+    width: 50%;
+}
+
+.page .main .content .container .body-container form .inp-col-1 .form-inp p {
+    margin: 0 0 .5rem 0;
+    font-size: 1.1rem;
+}
+
+.page .main .content .container .body-container form .inp-col-1 .form-inp input {
+    padding: .5rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--color-font);
+    border: 1px solid var(--color-font);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.page .main .content .container .body-container form .inp-col-1 .form-inp .inp-file {
+    padding: .5rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--color-font);
+    border: 1px solid var(--color-font);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.page .main .content .container .body-container form .inp-col-2 .form-inp, .inp-col-3 .form-inp {
+    margin: .5rem;
+}
+
+.page .main .content .container .body-container form .inp-col-2 .form-inp p, .inp-col-3 .form-inp p {
+    margin: 0 0 .5rem 0;
+    font-size: 1.1rem;
+}
+
+.page .main .content .container .body-container form .inp-col-2 .form-inp textarea, .inp-col-3 .form-inp textarea {
+    padding: .5rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--color-font);
+    border: 1px solid var(--color-font);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.page .main .content .container .body-container form .inp-sub {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.page .main .content .container .body-container form .inp-sub .note {
+    padding: 0 0 0 .5rem;
+}
+
+.page .main .content .container .body-container form .inp-sub .note p {
+    font-size: .9rem;
+}
+
+.page .main .content .container .body-container form .inp-sub .inp-submit {
+    display: flex;
+}
+
+.page .main .content .container .body-container form .inp-sub .inp-submit input {
+    margin: 0 .3rem;
+    padding: .3rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: green;
+    color: var(--color-font2);
+    border: none;
+    border-radius: var(--border-radius);
+}
+/* Create & Update Article CSS */
+
+/* View Article CSS */
+.page .main .content .container .body-view {
+    padding: 1rem 0 0;
+}
+
+.page .main .content .container .body-view .title-view {
+    text-align: center;
+}
+
+.page .main .content .container .body-view .title-view h1 {
+    font-size: 3rem;
+}
+
+.page .main .content .container .body-view .card-img {
+    padding: 1rem 0 .5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.page .main .content .container .body-view .card-img img {
+    width: 70%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+.page .main .content .container .body-view .card-body span {
+    padding: 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: .8rem;
+}
+
+.page .main .content .container .body-view .card-body p {
+    text-align: justify;
+}
+
+.page .main .content .container .body-view .card-destination h1 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.page .main .content .container .body-view .card-destination p {
+    text-align: justify;
+}
+/* View Article CSS */
+/* Container Session End */

@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .card {
+    padding: 1.5rem;
+    width: 30%;
+    border-radius: var(--border-radius);
+    background-color: var(--primary);
+    box-shadow: 0 0 10px var(--color-font);
+}
+
+.login .card .title {
+    display: flex;
+    justify-content: center;
+}
+
+.login .card .title h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.login .card .img {
+    padding: 1rem 0 .5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.login .card .img a {
+    display: flex;
+    justify-content: center;
+}
+
+.login .card .img a img {
+    width: 50%;
+}
+
+.login .card .content {
+    padding: 1rem 0 0;
+}
+
+.login .card .content form {
+    width: 100%;
+}
+
+.login .card .content form .inp-col-1 .form-inp, .inp-col-2 .form-inp {
+    padding: .5rem 0;
+}
+
+.login .card .content form .inp-col-1 .form-inp input, .inp-col-2 .form-inp input {
+    padding: .8rem 1.3rem;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    color: var(--color-font);
+    box-sizing: border-box;
+}
+
+.login .card .content form .form-btn {
+    padding: .5rem 0 0;
+}
+
+.login .card .content form .form-btn input {
+    padding: .8rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--third);
+    color: var(--color-font2);
+}
+
+.login .card .content form .form-btn input:hover {
+    cursor: pointer;
+    background-color: var(--footer);
+}

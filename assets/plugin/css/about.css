@@ -1,0 +1,195 @@
+/* Jumbotron CSS */
+.jb {
+    height: 70vh;
+    display: flex;
+    align-items: end;
+    background-image: url('../../img/about.jpg');
+    background-size: 100%;
+    background-position: 0 -20rem;
+    background-repeat: no-repeat
+}
+
+.jb .jumbotron {
+    padding: 1rem 3%;
+    width: 100%;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    background-color: rgba(246, 97, 13, .68);
+    color: var(--color-font2);
+    overflow: hidden;
+}
+
+.jb .jumbotron h1 {
+    font-size: 3rem;
+}
+
+.jb .jumbotron p {
+    font-size: 1rem;
+}
+/* Jumbotron CSS */
+
+/* About Session CSS */
+.about {
+    padding: 2rem 3%;
+}
+
+.about .about-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about .about-img img {
+    width: 60%;
+    border-radius: var(--border-radius);
+}
+
+.about .head {
+    padding: 2rem 0 1rem;
+    text-align: center;
+    color: var(--color-font);
+}
+
+.about .head h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about .head .sub {
+    padding: .5rem 0 0;
+}
+
+.about .head .sub h3 {
+    font-weight: 600;
+}
+
+.about .head .sub p i {
+    margin: 0 .2rem 0 0;
+}
+
+.about .head .sub p a {
+    color: var(--third);
+    font-weight: 500;
+}
+
+.about .head .sub p a:hover {
+    color: var(--fourth);
+}
+
+.about .body {
+    padding: 0 0 2rem;
+}
+
+.about .body p {
+    text-align: center;
+}
+/* About Session CSS */
+
+/* Vision & Mission Session CSS */
+.goal {
+    padding: 3rem 3%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+}
+
+.goal .part {
+    width: 48%;
+}
+
+.goal .part .icon {
+    display: flex;
+    justify-content: center;
+}
+
+.goal .part .icon i {
+    font-size: 4rem;
+    color: var(--fourth);
+}
+
+.goal .part .title {
+    padding: 1rem 0 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.goal .part .desc p {
+    text-align: justify;
+}
+/* Vision & Mission Session CSS */
+
+/* Gallery Session CSS */
+.gallery {
+    padding: 2rem 3%;
+}
+
+.gallery .title {
+    padding: .5rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery .title a {
+    display: flex;
+    align-items: center;
+    color: var(--color-font);
+}
+
+.gallery .title a i {
+    margin: 0 .5rem 0 0;
+    font-size: 1.3rem;
+}
+
+.gallery .content {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.gallery .content .card {
+    margin: .5rem;
+    width: 18.6%;
+    border-radius: var(--border-radius);
+}
+
+.gallery .content .card .card-img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.gallery .content .card .card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+.gallery .content .card .card-main {
+    padding: .5rem 0;
+    color: var(--color-font);
+    box-sizing: border-box;
+}
+
+.gallery .content .card .card-main p {
+    padding: .3rem 0 0;
+    font-size: .9rem;
+}
+
+.gallery .content .card .card-main h1 {
+    padding: .2rem 0 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.gallery .content .card .card-main h1 a {
+    color: var(--color-font);
+}
+
+.gallery .content .card .card-main h1 a:hover {
+    text-decoration: underline;
+}
+/* Gallery Session CSS */

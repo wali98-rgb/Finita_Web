@@ -1,0 +1,27 @@
+.pagination {
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.pagination .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination .wrap a {
+    margin: 0 .1rem;
+    padding: 0 .2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--fourth);
+}
+
+.pagination .wrap a:hover {
+    color: var(--third);
+}
+
+.pagination .wrap span i {
+    font-size: 1.3rem;
+}

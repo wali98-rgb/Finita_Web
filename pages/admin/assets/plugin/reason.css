@@ -1,0 +1,97 @@
+.page .main .content .container .header-container .cont-nav a {
+    padding: .2rem .7rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: green;
+    border-radius: var(--border-radius);
+    color: var(--color-font2);
+}
+
+.page .main .content .container .header-container .cont-nav a i {
+    margin: 0 .5rem 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-font2);
+}
+
+.page .main .content .container .body-container .content .title {
+    display: flex;
+    justify-content: center;
+}
+
+.page .main .content .container .body-container .content .title h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.page .main .content .container .body-container .content .cards {
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+    border: 1px solid var(--color-font);
+    border-radius: var(--border-radius);
+}
+
+.page .main .content .container .body-container .content .cards .card {
+    padding: .5rem 0 1rem;
+    border-top: 1px solid var(--color-font);
+}
+
+.page .main .content .container .body-container .content .cards .card .card-header {
+    padding: .5rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page .main .content .container .body-container .content .cards .card .card-header h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.page .main .content .container .body-container .content .cards .card-btn {
+    padding: .5rem 0;
+    display: flex;
+}
+
+.page .main .content .container .body-container .content .cards .card-btn a {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: red;
+}
+
+.page .main .content .container .body-container .content .cards .card-btn .update-btn {
+    margin: 0 0 0 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--third);
+}
+
+.page .main .content .container .body-container .content .cards .card-btn a:hover, .page .main .content .container .body-container .content .cards .card-btn a:hover>i {
+    color: var(--primary);
+}
+
+.page .main .content .container .body-container .content .cards .card-btn .update-btn:hover, .page .main .content .container .body-container .content .cards .card-btn .update-btn:hover>i {
+    color: var(--primary);
+}
+
+.page .main .content .container .body-container .content .cards .card-btn a i {
+    margin: 0 .5rem;
+    font-size: 1.5rem;
+    color: red;
+}
+
+.page .main .content .container .body-container .content .cards .card-btn .update-btn i {
+    margin: 0 .5rem;
+    font-size: 1.5rem;
+    color: var(--third);
+}
+
+.page .main .content .container .body-container .content .cards .card .card-reason {
+    padding: 0 0 .5rem;
+}

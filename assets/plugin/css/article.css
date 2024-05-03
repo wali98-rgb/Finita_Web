@@ -1,0 +1,382 @@
+/* Jumbotron CSS */
+.jb {
+    height: 70vh;
+    display: flex;
+    align-items: end;
+    background-image: url('../../img/travel5.jpg');
+    background-size: 100%;
+    background-position: 0 -20rem;
+    background-repeat: no-repeat
+}
+
+.jb .jumbotron {
+    padding: 1rem 3%;
+    width: 100%;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    background-color: rgba(142, 0, 191, .68);
+    color: var(--color-font2);
+    overflow: hidden;
+}
+
+.jb .jumbotron h1 {
+    font-size: 3rem;
+}
+
+.jb .jumbotron p {
+    font-size: 1rem;
+}
+/* Jumbotron CSS */
+
+/* Destination Session CSS */
+.destination {
+    padding: 1rem 3%;
+}
+
+.destination .title {
+    padding: 0 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.destination .title a {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--color-font);
+}
+
+.destination .title a i {
+    margin: 0 .5rem 0 0;
+    font-size: 1.3rem;
+}
+
+.destination .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.destination .content .card {
+    margin: .5rem;
+    width: 30%;
+    border-radius: var(--border-radius);
+    background-color: var(--primary);
+    transition: .5s;
+    box-shadow: 0 0 5px var(--secondary);
+}
+
+.destination .content .card:hover {
+    /* width: 32%; */
+    box-shadow: 0 0 20px var(--secondary);
+}
+
+.destination .content .card .content-btn .card-img {
+    margin: .5rem 0 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 14.5rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.destination .content .card .content-btn .card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    object-fit: contain;
+}
+
+.destination .content .card .content-btn .main {
+    margin: .5rem 1rem;
+    padding: 0 0 .5rem;
+    border-bottom: 2px solid var(--color-font);
+}
+
+.destination .content .card .content-btn .main h1 {
+    font-size: 1.4rem;
+    color: var(--color-font);
+}
+
+.destination .content .card .content-btn .main p {
+    padding: .3rem 0 0;
+    font-size: .8rem;
+    color: var(--color-font);
+}
+
+.destination .content .card .content-btn .duration {
+    padding: .3rem 1rem 1rem;
+}
+
+.destination .content .card .content-btn .duration span {
+    font-size: .8rem;
+    color: var(--color-font);
+}
+/* Destination Session CSS */
+
+/* Article Session CSS */
+.article {
+    padding: 2rem 3%;
+}
+
+.article .title {
+    padding: .5rem 0 1.5rem;
+}
+
+.article .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.article .content .card {
+    margin: .5rem 0;
+    padding: .5rem .5rem .3rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: var(--border-radius);
+}
+
+.article .content .card .card-img {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 18.5rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.article .content .card .card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+.article .content .card .card-main {
+    width: 63%;
+    box-sizing: border-box;
+}
+
+.article .content .card .card-main .head {
+    margin: 0 0 1rem;
+    padding: .5rem 0;
+    color: var(--color-font);
+}
+
+.article .content .card .card-main .head p {
+    padding: .3rem 0 0;
+    font-size: .9rem;
+}
+
+.article .content .card .card-main .head h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.article .content .card .card-main .body {
+    height: 72%;
+    display: flex;
+    align-items: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.article .content .card .card-main .body .desc {
+    width: 50rem;
+    font-size: .9rem;
+    text-align: justify;
+}
+
+.article .content .card .card-main .body .btn {
+    display: flex;
+    align-items: end;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.article .content .card .card-main .body .btn a {
+    padding: .5rem 2rem;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    background-color: var(--fourth);
+    color: var(--color-font2);
+}
+
+.article .content .card .card-btn {
+    padding: 0 0 0 .8rem;
+    width: 18%;
+    height: 96%;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    border-left: 2px solid var(--color-font);
+    flex-wrap: wrap;
+}
+
+.article .content .card .card-btn p {
+    padding: .5rem 0 0;
+    font-weight: 500;
+}
+
+.article .content .card .card-btn .btn {
+    display: flex;
+    align-items: end;
+}
+
+.article .content .card .card-btn .btn a {
+    padding: .5rem 2rem;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    background-color: var(--fourth);
+    color: var(--color-font2);
+}
+/* Article Session CSS */
+
+/* Gallery Session CSS */
+.gallery {
+    margin: 1rem 0 2rem;
+    padding: 3rem 3% 1rem;
+    background-color: var(--primary);
+}
+
+.gallery .title {
+    padding: 0 0 2rem;
+}
+
+.gallery .content {
+    padding: 0 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery .content .content-img {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 20rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.gallery .content .content-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+.gallery .content .content-main {
+    width: 48%;
+}
+
+.gallery .content .content-main h1 {
+    padding: .5rem 0 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.gallery .content .content-main .date {
+    padding: .5rem 0 1.5rem;
+}
+
+.gallery .content .content-main .desc {
+    padding: 0 0 2rem;
+    text-align: justify;
+}
+
+.gallery .content .content-main span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+/* Gallery Session CSS */
+
+/* View Session CSS */
+.view {
+    padding: 2rem 3%;
+    color: var(--color-font);
+}
+
+.view .title {
+    padding: 1rem 0 2rem;
+}
+
+.view .title h1 {
+    font-size: 2rem;
+}
+
+.view .content .content-img {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.view .content .content-img img {
+    width: 60%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+.view .content .header {
+    padding: 2rem 0 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.view .content .header h1 {
+    font-size: 3rem;
+}
+
+.view .content .main h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.view .content .main .time {
+    padding: .3rem 0 0;
+    font-size: 1rem;
+}
+
+.view .content .desc {
+    padding: 1rem 0;
+}
+
+.view .content .desc p {
+    text-align: justify;
+}
+
+.view .content .btn {
+    padding: 2rem 0 0;
+    text-align: right;
+}
+
+.view .content .btn h4 {
+    padding: 0 0 1.5rem;
+    font-size: 1.2rem;
+}
+
+.view .content .btn h4 span {
+    color: var(--third);
+}
+
+.view .content .btn a {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    background-color: var(--fourth);
+    color: var(--color-font2);
+}
+
+.view .content .btn a i {
+    margin: 0 .3rem 0 0;
+    font-size: 1.3rem;
+}
+/* View Session CSS */

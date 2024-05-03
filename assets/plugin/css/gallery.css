@@ -1,0 +1,180 @@
+/* Jumbotron CSS */
+.jb {
+    height: 70vh;
+    display: flex;
+    align-items: end;
+    background-image: url('../../img/company.jpg');
+    background-size: 100%;
+    background-position: 0 -10rem;
+    background-repeat: no-repeat
+}
+
+.jb .jumbotron {
+    padding: 1rem 3%;
+    width: 100%;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    background-color: rgba(142, 0, 191, .68);
+    color: var(--color-font2);
+    overflow: hidden;
+}
+
+.jb .jumbotron h1 {
+    font-size: 3rem;
+}
+
+.jb .jumbotron p {
+    font-size: 1rem;
+}
+/* Jumbotron CSS */
+
+/* Destination Session CSS */
+.destination {
+    padding: 1rem 3%;
+}
+
+.destination .title {
+    padding: 0 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.destination .title a {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--color-font);
+}
+
+.destination .title a i {
+    margin: 0 .5rem 0 0;
+    font-size: 1.3rem;
+}
+
+.destination .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.destination .content .card {
+    margin: .5rem;
+    width: 30%;
+    border-radius: var(--border-radius);
+    background-color: var(--primary);
+    transition: .5s;
+    box-shadow: 0 0 5px var(--secondary);
+}
+
+.destination .content .card:hover {
+    /* width: 32%; */
+    box-shadow: 0 0 20px var(--secondary);
+}
+
+.destination .content .card .content-btn .card-img {
+    margin: .5rem 0 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 14.5rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.destination .content .card .content-btn .card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    object-fit: contain;
+}
+
+.destination .content .card .content-btn .main {
+    margin: .5rem 1rem;
+    padding: 0 0 .5rem;
+    border-bottom: 2px solid var(--color-font);
+}
+
+.destination .content .card .content-btn .main h1 {
+    font-size: 1.4rem;
+    color: var(--color-font);
+}
+
+.destination .content .card .content-btn .main p {
+    padding: .3rem 0 0;
+    font-size: .8rem;
+    color: var(--color-font);
+}
+
+.destination .content .card .content-btn .duration {
+    padding: .3rem 1rem 1rem;
+}
+
+.destination .content .card .content-btn .duration span {
+    font-size: .8rem;
+    color: var(--color-font);
+}
+/* Destination Session CSS */
+
+/* Gallery Session CSS */
+.gallery {
+    padding: 2rem 3%;
+}
+
+.gallery .title {
+    padding: .5rem 0 1.5rem;
+}
+
+.gallery .content {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.gallery .content .card {
+    margin: .5rem;
+    width: 18.6%;
+    border-radius: var(--border-radius);
+}
+
+.gallery .content .card .card-img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.gallery .content .card .card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+.gallery .content .card .card-main {
+    padding: .5rem 0;
+    color: var(--color-font);
+    box-sizing: border-box;
+}
+
+.gallery .content .card .card-main p {
+    padding: .3rem 0 0;
+    font-size: .9rem;
+}
+
+.gallery .content .card .card-main h1 {
+    padding: .2rem 0 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.gallery .content .card .card-main h1 a {
+    color: var(--color-font);
+}
+
+.gallery .content .card .card-main h1 a:hover {
+    text-decoration: underline;
+}
+/* Gallery Session CSS */

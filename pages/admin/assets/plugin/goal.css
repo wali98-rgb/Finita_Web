@@ -1,0 +1,22 @@
+.page .main .content .container .body-container .cont-main .card-btn {
+    padding: 0 0 1rem;
+    border-bottom: 1px solid var(--color-font);
+}
+
+.page .main .content .container .body-container .cont-main .card-btn a {
+    margin: 0 .2rem;
+    padding: .2rem .4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    background-color: var(--third);
+    color: var(--color-font2);
+}
+
+.page .main .content .container .body-container .cont-main .card-btn a i {
+    color: var(--color-font2);
+}
+
+.page .main .content .container .body-container .cont-main .card {
+    /* padding: 1.5rem 0 0; */
+}

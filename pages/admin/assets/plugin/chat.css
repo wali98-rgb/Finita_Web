@@ -1,0 +1,209 @@
+.page {
+    display: flex;
+}
+
+.page .main {
+    padding: 0 0 0 17.9rem;
+    width: 100%;
+}
+
+.page .main .content .header-content {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .main .content .header-content h1 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Container Session Start */
+.page .main .content .container {
+    margin: 0 1.5rem 4rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+}
+
+.page .main .content .container .header-container {
+    padding: 0 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-font);
+}
+
+.page .main .content .container .header-container h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.page .main .content .container .header-container a {
+    padding: .2rem .7rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: green;
+    border-radius: var(--border-radius);
+    color: var(--color-font2);
+}
+
+.page .main .content .container .header-container a i {
+    margin: 0 .5rem 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-font2);
+}
+
+.page .main .content .container .body-container .msg-btn {
+    display: flex;
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+.page .main .content .container .body-container .msg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page .main .content .container .body-container .msg .card-chat {
+    margin: .5rem 0;
+    padding: 0 0 0 .5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    background-color: var(--status-chat-off);
+}
+
+.page .main .content .container .body-container .msg .card-chat .icon {
+    display: flex;
+    width: 6%;
+}
+
+.page .main .content .container .body-container .msg .card-chat .icon i {
+    font-size: 2.5rem;
+    color: grey;
+}
+
+.page .main .content .container .body-container .msg .card-chat .info-sender {
+    width: 20%;
+    text-align: left;
+    line-height: 1rem;
+}
+
+.page .main .content .container .body-container .msg .card-chat .info-sender span {
+    font-size: .6rem;
+    color: grey;
+}
+
+.page .main .content .container .body-container .msg .card-chat .info-sender h1 {
+    font-size: 1rem;
+    color: grey;
+}
+
+.page .main .content .container .body-container .msg .card-chat .info-sender .num {
+    font-size: .8rem;
+    color: grey;
+    line-height: 1.4rem;
+}
+
+.page .main .content .container .body-container .msg .card-chat .message {
+    margin: 0 0 0 1rem;
+    padding: 0 1rem;
+    width: 70%;
+    text-align: left;
+    border-left: 1.5px solid grey;
+    border-right: 1.5px solid grey;
+}
+
+.page .main .content .container .body-container .msg .card-chat .message p {
+    font-size: .8rem;
+    color: grey;
+}
+
+.page .main .content .container .body-container .msg .msg-btn-delete {
+    padding: .8rem .5rem;
+    background-color: var(--status-chat-off);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.page .main .content .container .body-container .msg .msg-btn-delete a {
+    font-size: 1.5rem;
+}
+
+/* Status Chat CSS */
+.page .main .content .container .body-container .in .card-chat {
+    background-color: var(--status-chat-on);
+    width: 100%;
+}
+
+.page .main .content .container .body-container .in .card-chat .icon i {
+    color: var(--color-font2);
+}
+
+.page .main .content .container .body-container .in .card-chat .info-sender span, .page .main .content .container .body-container .in .card-chat .info-sender h1, .page .main .content .container .body-container .in .card-chat .info-sender .num {
+    color: var(--color-font2);
+}
+
+.page .main .content .container .body-container .in .card-chat .message {
+    border-left: 1.5px solid var(--color-font2);
+    border-right: 1.5px solid var(--color-font2);
+}
+
+.page .main .content .container .body-container .in .card-chat .message p {
+    color: var(--color-font2);
+}
+
+.page .main .content .container .body-container .in .msg-btn-delete {
+    background-color: var(--status-chat-on);
+}
+/* Status Chat CSS */
+
+/* View Chat CSS */
+.page .main .content .container .body-view .card-chat {
+    padding: 0 0 1rem;
+}
+
+.page .main .content .container .body-view .card-chat .info-sender {
+    padding: 1rem .5rem 1.5rem;
+    line-height: 1.3rem;
+}
+
+.page .main .content .container .body-view .card-chat .info-sender h1 {
+    padding: 0 0 .5rem;
+    font-weight: 600;
+}
+
+.page .main .content .container .body-view .card-chat .info-sender span {
+    font-size: .9rem;
+}
+
+.page .main .content .container .body-view .card-chat .message {
+    padding: 0 .5rem;
+}
+
+.page .main .content .container .body-view .card-chat .message p {
+    font-size: .9rem;
+}
+
+.page .main .content .container .body-view .msg-btn-delete {
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page .main .content .container .body-view .msg-btn-delete a {
+    padding: .3rem .5rem;
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+}
+/* View Chat CSS */
+/* Container Session End */

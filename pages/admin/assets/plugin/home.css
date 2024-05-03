@@ -1,0 +1,128 @@
+.page {
+    display: flex;
+}
+
+.page .main {
+    padding: 0 0 0 17.9rem;
+    width: 100%;
+}
+
+.page .main .content .header-content {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .main .content .header-content h1 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Container Session Start */
+.page .main .content .container {
+    margin: 0 1.5rem 7.2rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+}
+
+.page .main .content .container .header-container {
+    padding: 0 0 1rem;
+    border-bottom: 1px solid var(--color-font);
+}
+
+.page .main .content .container .header-container h1 {
+    font-weight: 600;
+}
+
+.page .main .content .container .contain {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.page .main .content .container .contain .card-info {
+    margin: 1rem 0 0;
+    width: 32%;
+    background-color: var(--third);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.page .main .content .container .contain .card-second {
+    background-color: var(--fourth);
+}
+
+.page .main .content .container .contain .card-third {
+    background-color: var(--fifth);
+}
+
+.page .main .content .container .contain .card-info .header {
+    margin: 0 1rem;
+    padding: 1rem 0 .5rem;
+    border-bottom: 1px solid var(--color-font2);
+}
+
+.page .main .content .container .contain .card-info .header h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-font2);
+}
+
+.page .main .content .container .contain .card-info .info {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .main .content .container .contain .card-info .info .number {
+    padding: 0;
+}
+
+.page .main .content .container .contain .card-info .info .number h1 {
+    padding: 0 0 0 1rem;
+    line-height: 4rem;
+    font-size: 4rem;
+    color: var(--color-font2);
+}
+
+.page .main .content .container .contain .card-info .info .number p {
+    font-size: 1rem;
+    color: var(--color-font2);
+}
+
+.page .main .content .container .contain .card-info .info .icon {
+    padding: 0;
+}
+
+.page .main .content .container .contain .card-info .info .icon i {
+    font-size: 5rem;
+    line-height: 4rem;
+    color: rgba(252, 252, 252, .3);
+}
+
+.page .main .content .container .contain .card-info .btn a {
+    padding: .5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--third2);
+    color: var(--color-font2);
+}
+
+.page .main .content .container .contain .card-second .btn a {
+    background-color: var(--fourth2);
+}
+
+.page .main .content .container .contain .card-info .btn a i {
+    margin: 0 0 0 1rem;
+    color: var(--color-font2);
+}
+
+.page .main .content .container .contain .card-third .btn a {
+    background-color: var(--fifth2);
+}
+/* Container Session Start */

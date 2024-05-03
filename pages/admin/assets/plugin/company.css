@@ -1,0 +1,140 @@
+.page {
+    display: flex;
+}
+
+.page .main {
+    padding: 0 0 0 17.9rem;
+    width: 100%;
+}
+
+.page .main .content .header-content {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .main .content .header-content h1 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Container Session Start */
+.page .main .content .container {
+    margin: 0 1.5rem 4rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+}
+
+.page .main .content .container .header-container {
+    padding: 0 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-font);
+}
+
+.page .main .content .container .header-container .cont-nav {
+    display: flex;
+}
+
+.page .main .content .container .header-container .cont-nav button {
+    margin: 0 .5rem;
+    padding: .3rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    background-color: var(--bg);
+    border-radius: var(--border-radius);
+    color: var(--color-font);
+}
+
+.page .main .content .container .body-container {
+    margin: .5rem 0 0;
+}
+
+.page .main .content .container .body-container .cont-main .cont-title {
+    display: flex;
+    justify-content: center;
+}
+
+.page .main .content .container .body-container .cont-main .cont-title h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.page .main .content .container .body-container .cont-main form {
+    margin: .5rem 0 0;
+}
+
+.page .main .content .container .body-container .cont-main form .inp-col-1 .form-inp, .inp-col-2 .form-inp {
+    margin: .5rem;
+}
+
+.page .main .content .container .body-container .cont-main form .inp-col-1 .form-inp p, .inp-col-2 .form-inp p {
+    margin: 0 0 .5rem 0;
+    font-size: 1.1rem;
+}
+
+.page .main .content .container .body-container .cont-main form .inp-col-1 .form-inp input, .inp-col-2 .form-inp input {
+    padding: .5rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--color-font);
+    border: 1px solid var(--color-font);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.page .main .content .container .body-container .cont-main form .inp-col-2 .form-inp textarea {
+    padding: .5rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--color-font);
+    border: 1px solid var(--color-font);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.page .main .content .container .body-container .cont-main form .inp-sub {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.page .main .content .container .body-container .cont-main form .inp-sub .note {
+    padding: 0 0 0 .5rem;
+}
+
+.page .main .content .container .body-container .cont-main form .inp-sub .note button {
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    background: none;
+    color: var(--third);
+}
+
+.page .main .content .container .body-container .cont-main form .inp-sub .note button:hover {
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.page .main .content .container .body-container .cont-main form .inp-sub .note p {
+    font-size: .9rem;
+}
+
+.page .main .content .container .body-container .cont-main form .inp-sub .inp-submit {
+    display: flex;
+}
+
+.page .main .content .container .body-container .cont-main form .inp-sub .inp-submit input {
+    margin: 0 .3rem;
+    padding: .3rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: green;
+    color: var(--color-font2);
+    border: none;
+    border-radius: var(--border-radius);
+}
+/* Container Session End */

@@ -1,0 +1,28 @@
+:root {
+    --primary: #ffffff;
+    --secondary: #000000;
+    --third: #8E00BF;
+    --fourth: #F6610D;
+    --footer: #5A007A;
+    --bg: #F4EDFF;
+    --navbar: #FFFFFF;
+    --color-font: #0C0030;
+    --color-font2: #FFFFFF;
+    --border-radius: .3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg);
+}

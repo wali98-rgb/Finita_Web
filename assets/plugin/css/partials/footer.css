@@ -1,0 +1,88 @@
+.footer {
+    padding: 2rem 0 0;
+    background-color: var(--third);
+    color: var(--color-font2);
+}
+
+.footer .foot-header {
+    margin: 0 3%;
+    padding: 1rem 3% 2rem;
+    border-bottom: 2px solid var(--color-font2);
+}
+
+.footer .foot-header h1 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.footer .foot-header h1 i {
+    margin: 0 .5rem 0 0;
+    font-size: 2.5rem;
+}
+
+.footer .foot-content {
+    padding: 2rem 3% 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .foot-content .foot {
+    width: 30%;
+    max-width: 30%;
+}
+
+.footer .foot-content .foot h1 {
+    padding: 0 0 1rem;
+    font-size: 1.3rem;
+}
+
+.footer .foot-content .foot p {
+    font-size: .9rem;
+}
+
+.footer .foot-content .foot .btn {
+    padding: .3rem 0;
+}
+
+.footer .foot-content .foot .btn a {
+    color: var(--color-font2);
+}
+
+.footer .foot-content .foot .desc {
+    padding: 1rem 0 0;
+    text-align: justify;
+}
+
+.footer .foot-content .foot iframe {
+    border-radius: var(--border-radius);
+}
+
+.footer .foot-footer {
+    padding: .5rem 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--footer);
+}
+
+.footer .foot-footer .copy p {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.footer .foot-footer .pay {
+    display: flex;
+}
+
+.footer .foot-footer .pay-img {
+    margin: 0 .3rem;
+    width: 3rem;
+    border-radius: var(--border-radius);
+}
+
+.footer .foot-footer .pay-img img {
+    width: 100%;
+    border-radius: var(--border-radius);
+}

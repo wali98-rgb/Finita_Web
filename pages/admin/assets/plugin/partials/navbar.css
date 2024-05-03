@@ -1,0 +1,35 @@
+.page .main .navbars {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+}
+
+.page .main .navbars .name-nav h1 {
+    font-size: 1.2rem;
+    color: var(--color-font2);
+}
+
+.page .main .navbars .extra-nav {
+    display: flex;
+    align-items: center;
+}
+
+.page .main .navbars .extra-nav button {
+    border: none;
+    background: none;
+}
+
+.page .main .navbars .extra-nav button i {
+    color: var(--color-font2);
+}
+
+.page .main .navbars .extra-nav .notif {
+    font-size: 1.3rem;
+}
+
+.page .main .navbars .extra-nav .account {
+    margin: 0 0 0 .8rem;
+    font-size: 1.5rem;
+}

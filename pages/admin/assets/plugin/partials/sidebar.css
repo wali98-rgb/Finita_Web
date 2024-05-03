@@ -1,0 +1,51 @@
+.page .sidebars {
+    position: fixed;
+    padding: 1rem;
+    max-width: 20rem;
+    min-width: 10rem;
+    background-color: var(--secondary);
+}
+
+.page .sidebars .name {
+    padding: 0 0 1rem;
+    border-bottom: 1px solid var(--color-font2);
+    text-align: center;
+}
+
+.page .sidebars .name h1 {
+    font-size: 1.4rem;
+    color: var(--color-font2);
+}
+
+.page .sidebars .side-btn {
+    padding: .5rem 0 0;
+    min-height: 100vh;
+}
+
+.page .sidebars .side-btn li {
+    margin: .8rem 0;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.page .sidebars .side-btn a {
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.page .sidebars .side-btn .active {
+    background-color: var(--active-sidebar);
+    border-radius: var(--border-radius);
+}
+
+.page .sidebars .side-btn li i, li a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-font2);
+}
+
+.page .sidebars .side-btn li i {
+    margin: 0 .5rem 0 0;
+}

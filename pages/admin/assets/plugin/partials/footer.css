@@ -1,0 +1,13 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .5rem 1.5rem;
+    background-color: var(--footer);
+}
+
+.footer h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-font2);
+}
