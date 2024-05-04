@@ -18,6 +18,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!-- Tiny MCE -->
+    <!-- API KEY = lpslqfqt8brq0ng94mvd6pbz19lggkw44p42fgxn5ntcbx2j -->
+    <!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script> -->
+    <script src="https://cdn.tiny.cloud/1/lpslqfqt8brq0ng94mvd6pbz19lggkw44p42fgxn5ntcbx2j/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+
     <!-- My Fav Icon -->
     <link rel="icon" href="../../../assets/img/logo/favicon.jpeg">
 
@@ -160,6 +165,119 @@
         <!-- Main End -->
     </div>
     <!-- Pages Session End -->
+
+    <!-- JS Tiny MCE Library -->
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss markdown',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+            mergetags_list: [{
+                    value: 'First.Name',
+                    title: 'First Name'
+                },
+                {
+                    value: 'Email',
+                    title: 'Email'
+                },
+            ],
+            ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+        });
+    </script>
+
+    <!-- <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'preview importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists wordcount help charmap quickbars emoticons',
+            menubar: 'file edit view insert format tools table help',
+            toolbar: 'undo redo | bold italic underline strikethrough | fontfamily fontsize blocks | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
+            toolbar_sticky: true,
+            autosave_ask_before_unload: true,
+            autosave_interval: '30s',
+            autosave_prefix: '{path}{query}-{id}-',
+            autosave_restore_when_empty: false,
+            autosave_retention: '2m',
+            image_advtab: true,
+            link_list: [{
+                    title: 'My page 1',
+                    value: 'https://www.codexworld.com'
+                },
+                {
+                    title: 'My page 2',
+                    value: 'http://www.codexqa.com'
+                }
+            ],
+            image_list: [{
+                    title: 'My page 1',
+                    value: 'https://www.codexworld.com'
+                },
+                {
+                    title: 'My page 2',
+                    value: 'http://www.codexqa.com'
+                }
+            ],
+            image_class_list: [{
+                    title: 'None',
+                    value: ''
+                },
+                {
+                    title: 'Some class',
+                    value: 'class-name'
+                }
+            ],
+            importcss_append: true,
+            file_picker_callback: (callback, value, meta) => {
+                /* Provide file and text for the link dialog */
+                if (meta.filetype === 'file') {
+                    callback('https://www.google.com/logos/google.jpg', {
+                        text: 'My text'
+                    });
+                }
+
+                /* Provide image and alt text for the image dialog */
+                if (meta.filetype === 'image') {
+                    callback('https://www.google.com/logos/google.jpg', {
+                        alt: 'My alt text'
+                    });
+                }
+
+                /* Provide alternative source and posted for the media dialog */
+                if (meta.filetype === 'media') {
+                    callback('movie.mp4', {
+                        source2: 'alt.ogg',
+                        poster: 'https://www.google.com/logos/google.jpg'
+                    });
+                }
+            },
+            templates: [{
+                    title: 'New Table',
+                    description: 'creates a new table',
+                    content: '<div class="mceTmpl"><table width="98%%"  border="0" cellspacing="0" cellpadding="0"><tr><th scope="col"> </th><th scope="col"> </th></tr><tr><td> </td><td> </td></tr></table></div>'
+                },
+                {
+                    title: 'Starting my story',
+                    description: 'A cure for writers block',
+                    content: 'Once upon a time...'
+                },
+                {
+                    title: 'New list with dates',
+                    description: 'New List with dates',
+                    content: '<div class="mceTmpl"><span class="cdate">cdate</span><br><span class="mdate">mdate</span><h2>My List</h2><ul><li></li><li></li></ul></div>'
+                }
+            ],
+            template_cdate_format: '[Date Created (CDATE): %m/%d/%Y : %H:%M:%S]',
+            template_mdate_format: '[Date Modified (MDATE): %m/%d/%Y : %H:%M:%S]',
+            height: 400,
+            image_caption: true,
+            quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
+            noneditable_class: 'mceNonEditable',
+            toolbar_mode: 'sliding',
+            contextmenu: 'link image table',
+            content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
+        });
+    </script> -->
 </body>
 
 </html>
