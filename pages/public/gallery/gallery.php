@@ -121,32 +121,6 @@
             }
             ?>
         </div>
-
-        <!-- Pagination Start -->
-        <div class="pagination">
-            <div class="wrap">
-                <?php
-                $now;
-                if ($currentPage > 1) {
-                    $prevPage = $currentPage - 1;
-                    echo "<a href='?page=$prevPage'><i class='bi-chevron-double-left'></i></a>";
-                } else {
-                    echo "<span><i class='bi-chevron-double-left'></i></span>";
-                }
-                for ($i = 1; $i <= $totalPages; $i++) {
-                    echo "<a href='?page=$i'>$i</a>";
-                }
-
-                if ($currentPage < $totalPages) {
-                    $nextPage = $currentPage + 1;
-                    echo "<a href='?page=$nextPage'><i class='bi-chevron-double-right'></i></a>";
-                } else {
-                    echo "<span><i class='bi-chevron-double-right'></i></span>";
-                }
-                ?>
-            </div>
-        </div>
-        <!-- Pagination End -->
     </section>
     <!-- Gallery Session End -->
 
