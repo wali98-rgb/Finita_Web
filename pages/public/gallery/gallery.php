@@ -74,29 +74,29 @@
             $data = mysqli_query($con, "SELECT * FROM documentations");
             $dataAll = mysqli_fetch_assoc($data);
 
-            $queryTotalRows = "SELECT COUNT(*) as total_rows FROM documentations";
-            $stmtTotalRows = $con->prepare($queryTotalRows);
-            $stmtTotalRows->execute();
-            $resultTotalRows = $stmtTotalRows->get_result();
-            $rowTotalRows = $resultTotalRows->fetch_assoc();
+            // $queryTotalRows = "SELECT COUNT(*) as total_rows FROM documentations";
+            // $stmtTotalRows = $con->prepare($queryTotalRows);
+            // $stmtTotalRows->execute();
+            // $resultTotalRows = $stmtTotalRows->get_result();
+            // $rowTotalRows = $resultTotalRows->fetch_assoc();
 
-            $totalRows = $rowTotalRows['total_rows'];
+            // $totalRows = $rowTotalRows['total_rows'];
 
-            $dataPerPage = 15;
-            $totalPages = ceil($totalRows / $dataPerPage);
+            // $dataPerPage = 15;
+            // $totalPages = ceil($totalRows / $dataPerPage);
 
-            $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
+            // $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
 
-            $offset = ($currentPage - 1) * $dataPerPage;
+            // $offset = ($currentPage - 1) * $dataPerPage;
 
-            $queryData = "SELECT * FROM documentations LIMIT ?, ?";
-            $stmtData = $con->prepare($queryData);
-            $stmtData->bind_param("ii", $offset, $dataPerPage);
-            $stmtData->execute();
-            $resultData = $stmtData->get_result();
+            // $queryData = "SELECT * FROM documentations LIMIT ?, ?";
+            // $stmtData = $con->prepare($queryData);
+            // $stmtData->bind_param("ii", $offset, $dataPerPage);
+            // $stmtData->execute();
+            // $resultData = $stmtData->get_result();
 
             if ($dataAll > 0) {
-                foreach ($resultData as $dat) {
+                foreach ($data as $dat) {
             ?>
                     <!-- Card Start -->
                     <div class="card">
