@@ -133,10 +133,13 @@
 
 .article .content .card {
     margin: .5rem 0;
-    padding: .5rem .5rem .3rem;
+    padding: .3rem .5rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border-radius: var(--border-radius);
+    background-color: var(--primary);
+    box-shadow: 0 0 10px var(--secondary);
 }
 
 .article .content .card .card-img {
@@ -156,7 +159,7 @@
 }
 
 .article .content .card .card-main {
-    width: 63%;
+    width: 64%;
     box-sizing: border-box;
 }
 
@@ -164,15 +167,15 @@
     margin: 0 0 1rem;
     padding: .5rem 0;
     color: var(--color-font);
+    border-bottom: 2px solid var(--color-font);
 }
 
 .article .content .card .card-main .head p {
-    padding: .3rem 0 0;
     font-size: .9rem;
 }
 
 .article .content .card .card-main .head h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
