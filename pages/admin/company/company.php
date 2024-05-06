@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../assets/plugin/sponsor.css">
     <link rel="stylesheet" href="../assets/plugin/question.css">
     <link rel="stylesheet" href="../assets/plugin/goal.css">
+    <link rel="stylesheet" href="../assets/plugin/about.css">
     <link rel="stylesheet" href="../assets/plugin/partials/sidebar.css">
     <link rel="stylesheet" href="../assets/plugin/partials/navbar.css">
     <link rel="stylesheet" href="../assets/plugin/partials/footer.css">
@@ -113,6 +114,7 @@
                             <button id="sponsor">Sponsor</button>
                             <button id="question">Pertanyaan</button>
                             <button id="goal">Visi & Misi</button>
+                            <button id="about">Tentang Kami</button>
                         </div>
                     </div>
 
@@ -257,6 +259,20 @@
                 // Menggunakan AJAX untuk memuat konten baru dari server
                 $.ajax({
                     url: "../accessoris-company/reason/data.php", // URL ke skrip PHP yang akan memproses permintaan
+                    type: "GET", // Metode permintaan
+                    success: function(response) {
+                        // Menampilkan konten baru di dalam kontainer
+                        $("#content_container").html(response);
+                    }
+                });
+            });
+        });
+
+        $(document).ready(function() {
+            $("#about").click(function() {
+                // Menggunakan AJAX untuk memuat konten baru dari server
+                $.ajax({
+                    url: "../accessoris-company/about/about.php", // URL ke skrip PHP yang akan memproses permintaan
                     type: "GET", // Metode permintaan
                     success: function(response) {
                         // Menampilkan konten baru di dalam kontainer
