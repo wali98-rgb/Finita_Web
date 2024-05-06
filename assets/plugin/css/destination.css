@@ -63,6 +63,8 @@
     padding: .5rem;
     width: 30%;
     border-radius: var(--border-radius);
+    background-color: var(--primary);
+    box-shadow: 0 0 5px var(--secondary);
     transition: .5s;
 }
 
@@ -72,11 +74,12 @@
 }
 
 .article .content .card .content-btn .card-img {
+    padding: 0 0 .5rem;
     display: flex;
     align-items: center;
     width: 100%;
     height: 15rem;
-    border-radius: var(--border-radius);
+    border-bottom: 2px solid var(--color-font);
     overflow: hidden;
 }
 
@@ -89,7 +92,7 @@
 
 .article .content .card .content-btn .main {
     margin: .5rem 0 0;
-    padding: 0 0 .5rem;
+    padding: 0 .5rem .5rem;
 }
 
 .article .content .card .content-btn .main h1 {
