@@ -136,7 +136,7 @@
                             <div class="inp-col-2">
                                 <div class="form-inp">
                                     <p><label for="desc_article">Isian Pembahasan Artikel :</label></p>
-                                    <textarea name="desc_article" id="desc_article" cols="30" rows="10" placeholder="Masukkan Isian Pembahasan Artikel" required></textarea>
+                                    <textarea name="desc_article" id="desc_article" cols="30" rows="10" placeholder="Masukkan Isian Pembahasan Artikel"></textarea>
                                 </div>
                             </div>
 
