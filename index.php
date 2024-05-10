@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- My Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
 
     <!-- My Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -46,11 +46,11 @@
 
         <div class="navbars-nav">
             <a href="./">Home</a>
-            <a href="pages/public/destination/destination.php">Destinasi</a>
-            <a href="pages/public/article/article.php">Artikel</a>
-            <a href="pages/public/gallery/gallery.php">Galeri</a>
-            <a href="pages/public/contact/contact.php">Kontak</a>
-            <a href="pages/public/about/about.php">Tentang Kami</a>
+            <a href="pages/public/destination/destination.php">Destination</a>
+            <a href="pages/public/article/article.php">Article</a>
+            <a href="pages/public/gallery/gallery.php">Gallery</a>
+            <a href="pages/public/contact/contact.php">Contact</a>
+            <a href="pages/public/about/about.php">About Us</a>
         </div>
     </nav>
     <!-- Navbar End -->

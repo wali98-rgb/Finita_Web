@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- My Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
 
     <!-- My Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -40,18 +40,18 @@
     <!-- Navbar Start -->
     <nav class="navbars">
         <div class="logo-nav">
-            <a href="./">
+            <a href="../../../">
                 <img src="../../../assets/img/logo/logo.jpeg" alt="Logo Finita Tour & Travel">
             </a>
         </div>
 
         <div class="navbars-nav">
-            <a href="../../../index.php">Home</a>
-            <a href="destination.php">Destinasi</a>
-            <a href="../article/article.php">Artikel</a>
-            <a href="../gallery/gallery.php">Galeri</a>
-            <a href="../contact/contact.php">Kontak</a>
-            <a href="../about/about.php">Tentang Kami</a>
+            <a href="../../../">Home</a>
+            <a href="destination.php">Destination</a>
+            <a href="../article/article.php">Article</a>
+            <a href="../gallery/gallery.php">Gallery</a>
+            <a href="../contact/contact.php">Contact</a>
+            <a href="../about/about.php">About Us</a>
         </div>
     </nav>
     <!-- Navbar End -->
