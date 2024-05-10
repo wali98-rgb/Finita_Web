@@ -27,6 +27,23 @@
     <link rel="icon" href="../../../assets/img/logo/favicon.jpeg">
 
     <title>Finita Tour & Travel</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        /* Gaya untuk popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+    </style>
 </head>
 
 <body>
@@ -64,6 +81,13 @@
         </div>
     </section>
     <!-- Jumbotron Session End -->
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <h1>Detail Dokumentasi</h1>
+        <div id="data-container"></div>
+        <button onclick="sembunyikanPopup()">Tutup</button>
+    </div>
 
     <!-- Gallery Session Start -->
     <section class="gallery">
@@ -109,7 +133,9 @@
 
                         <div class="card-main">
                             <p>Diposting: <?php echo $dat['date_documentation']; ?></p>
-                            <h1><a href="view.php?id=<?php echo $dat['id_documentations']; ?>"><?php echo $dat['title_documentation']; ?></a></h1>
+                            <h1>
+                                <button class="show-popup" data-id="<?php echo $dat['id_documentations']; ?>"><?php echo $dat['title_documentation']; ?></button>
+                            </h1>
                         </div>
                     </div>
                     <!-- Card End -->
@@ -235,6 +261,32 @@
 
     <!-- My JavaScript -->
     <script src="../../../assets/plugin/js/script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Ketika tombol ditekan
+            $(".show-popup").click(function() {
+                var id = $(this).data("id");
+                // Kirim permintaan AJAX ke server
+                $.ajax({
+                    url: "popup.php",
+                    method: "POST",
+                    data: {
+                        id: id
+                    },
+                    success: function(response) {
+                        // Tampilkan data di dalam popup
+                        $("#data-container").html(response);
+                        $("#popup").show();
+                    }
+                });
+            });
+        });
+
+        function sembunyikanPopup() {
+            $("#popup").hide();
+        }
+    </script>
 
     <!-- My Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
