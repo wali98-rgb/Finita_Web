@@ -1,11 +1,11 @@
 /* Jumbotron CSS */
 .jb {
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: end;
-    background-image: url('../../img/travel5.jpg');
+    background-image: url('../../img/travel5.jpeg');
     background-size: 100%;
-    background-position: 0 -20rem;
+    background-position: 0 -30rem;
     background-repeat: no-repeat
 }
 

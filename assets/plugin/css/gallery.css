@@ -3,9 +3,9 @@
     height: 70vh;
     display: flex;
     align-items: end;
-    background-image: url('../../img/company.jpg');
+    background-image: url('../../img/company.jpeg');
     background-size: 100%;
-    background-position: 0 -10rem;
+    background-position: 0 -8rem;
     background-repeat: no-repeat
 }
 
