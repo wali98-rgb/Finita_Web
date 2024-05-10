@@ -116,7 +116,37 @@
                         while ($dat = mysqli_fetch_array($data)) {
                         ?>
                             <div class="card-img">
-                                <img src="file_img/<?php echo $dat['img_documentation']; ?>" alt="Dokumentasi <?php echo $dat['title_documentation']; ?>">
+                                <img src="file_img/img/<?php echo $dat['img_documentation']; ?>" alt="Dokumentasi <?php echo $dat['title_documentation']; ?>">
+                            </div>
+
+                            <div class="card-img-other">
+                                <?php
+                                if ($dat['img_documentation2'] != "") {
+                                ?>
+                                    <img src="file_img/img2/<?php echo $dat['img_documentation2']; ?>" alt="<?php echo $dat['title_documentation']; ?>">
+                                <?php
+                                }
+                                if ($dat['img_documentation3'] != "") {
+                                ?>
+                                    <img src="file_img/img3/<?php echo $dat['img_documentation3']; ?>" alt="<?php echo $dat['title_documentation']; ?>">
+                                <?php
+                                }
+                                if ($dat['img_documentation4'] != "") {
+                                ?>
+                                    <img src="file_img/img4/<?php echo $dat['img_documentation4']; ?>" alt="<?php echo $dat['title_documentation']; ?>">
+                                <?php
+                                }
+                                if ($dat['img_documentation5'] != "") {
+                                ?>
+                                    <img src="file_img/img5/<?php echo $dat['img_documentation5']; ?>" alt="<?php echo $dat['title_documentation']; ?>">
+                                <?php
+                                }
+                                if ($dat['img_documentation6'] != "") {
+                                ?>
+                                    <img src="file_img/img6/<?php echo $dat['img_documentation6']; ?>" alt="<?php echo $dat['title_documentation']; ?>">
+                                <?php
+                                }
+                                ?>
                             </div>
 
                             <div class="card-content">

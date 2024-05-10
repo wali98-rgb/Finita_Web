@@ -116,6 +116,41 @@
                                 </div>
                             </div>
 
+                            <div class="inp-col-1" style="display: none;" id="inputImg2">
+                                <div class="form-inp">
+                                    <p><label for="img_documentation2">Masukkan Foto Dokumentasi 2 :</label></p>
+                                    <input class="inp-file" type="file" name="img_documentation2" id="img_documentation2" placeholder="Masukkan Foto Dokumentasi 2">
+                                </div>
+                            </div>
+
+                            <div class="inp-col-1" style="display: none;" id="inputImg3">
+                                <div class="form-inp">
+                                    <p><label for="img_documentation3">Masukkan Foto Dokumentasi 3 :</label></p>
+                                    <input class="inp-file" type="file" name="img_documentation3" id="img_documentation3" placeholder="Masukkan Foto Dokumentasi 3">
+                                </div>
+                            </div>
+
+                            <div class="inp-col-1" style="display: none;" id="inputImg4">
+                                <div class="form-inp">
+                                    <p><label for="img_documentation4">Masukkan Foto Dokumentasi 4 :</label></p>
+                                    <input class="inp-file" type="file" name="img_documentation4" id="img_documentation4" placeholder="Masukkan Foto Dokumentasi 4">
+                                </div>
+                            </div>
+
+                            <div class="inp-col-1" style="display: none;" id="inputImg5">
+                                <div class="form-inp">
+                                    <p><label for="img_documentation5">Masukkan Foto Dokumentasi 5 :</label></p>
+                                    <input class="inp-file" type="file" name="img_documentation5" id="img_documentation5" placeholder="Masukkan Foto Dokumentasi 5">
+                                </div>
+                            </div>
+
+                            <div class="inp-col-1" style="display: none;" id="inputImg6">
+                                <div class="form-inp">
+                                    <p><label for="img_documentation6">Masukkan Foto Dokumentasi 6 :</label></p>
+                                    <input class="inp-file" type="file" name="img_documentation6" id="img_documentation6" placeholder="Masukkan Foto Dokumentasi 6">
+                                </div>
+                            </div>
+
                             <div class="inp-col-2">
                                 <div class="form-inp">
                                     <p><label for="title_documentation">Nama Kegiatan :</label></p>
@@ -155,6 +190,58 @@
         <!-- Main End -->
     </div>
     <!-- Pages Session End -->
+
+    <!-- My JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var input1 = document.querySelector('input[name="img_documentation"]');
+            var input2 = document.querySelector('input[name="img_documentation2"]');
+            var input3 = document.querySelector('input[name="img_documentation3"]');
+            var input4 = document.querySelector('input[name="img_documentation4"]');
+            var input5 = document.querySelector('input[name="img_documentation5"]');
+            var input6 = document.querySelector('input[name="img_documentation6"]');
+
+            input1.addEventListener('input', function() {
+                if (input1.value.trim() !== '') {
+                    inputImg2.style.display = 'block';
+                } else {
+                    inputImg2.style.display = 'none';
+                }
+            });
+
+            input2.addEventListener('input', function() {
+                if (input2.value.trim() !== '') {
+                    inputImg3.style.display = 'block';
+                } else {
+                    inputImg3.style.display = 'none';
+                }
+            });
+
+            input3.addEventListener('input', function() {
+                if (input3.value.trim() !== '') {
+                    inputImg4.style.display = 'block';
+                } else {
+                    inputImg4.style.display = 'none';
+                }
+            });
+
+            input4.addEventListener('input', function() {
+                if (input4.value.trim() !== '') {
+                    inputImg5.style.display = 'block';
+                } else {
+                    inputImg5.style.display = 'none';
+                }
+            });
+
+            input5.addEventListener('input', function() {
+                if (input5.value.trim() !== '') {
+                    inputImg6.style.display = 'block';
+                } else {
+                    inputImg6.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
     <!-- My Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

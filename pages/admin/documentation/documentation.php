@@ -146,7 +146,7 @@
                                 <!-- Card Content Start -->
                                 <div class="card-documentation">
                                     <div class="card-img">
-                                        <img src="file_img/<?php echo $dat['img_documentation']; ?>" alt="Dokumentasi <?php echo $dat['title_documentation']; ?>">
+                                        <img src="file_img/img/<?php echo $dat['img_documentation']; ?>" alt="Dokumentasi <?php echo $dat['title_documentation']; ?>">
                                     </div>
 
                                     <div class="card-btn">
