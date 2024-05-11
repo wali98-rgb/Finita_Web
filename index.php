@@ -148,7 +148,7 @@
         <div class="content">
             <!-- Mengambil Data Destinasi dari Database -->
             <?php
-            $destination = mysqli_query($con, "SELECT * FROM destinations LIMIT 3");
+            $destination = mysqli_query($con, "SELECT * FROM destinations LIMIT 5");
             $destinationAll = mysqli_fetch_assoc($destination);
 
             if ($destinationAll > 0) {
@@ -163,7 +163,7 @@
 
                             <div class="main">
                                 <h1>Kota <?php echo ucfirst($des['destination_city']); ?></h1>
-                                <p><i class="bi bi-geo-alt"></i> <?php echo ucfirst($des['early_city']) . " s.d " . ucfirst($des['img_destination']); ?></p>
+                                <p><i class="bi bi-geo-alt"></i> <?php echo ucfirst($des['early_city']) . " s.d " . ucfirst($des['destination_city']); ?></p>
                             </div>
 
                             <div class="duration">
@@ -308,7 +308,7 @@
         <div class="content">
             <!-- Mengambil Data Artikel dari Database -->
             <?php
-            $article = mysqli_query($con, "SELECT * FROM articles LIMIT 3");
+            $article = mysqli_query($con, "SELECT * FROM articles LIMIT 5");
             $articleAll = mysqli_fetch_assoc($article);
 
             if ($articleAll > 0) {
@@ -323,7 +323,7 @@
 
                             <div class="main">
                                 <p><?php echo $art['date_post']; ?> | By Admin</p>
-                                <h1><?php echo $art['title_article']; ?></h1>
+                                <h1><?php echo ucfirst($art['title_article']); ?></h1>
                             </div>
                         </a>
                     </div>

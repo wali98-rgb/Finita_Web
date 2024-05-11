@@ -174,7 +174,7 @@
 
 .destination .content .card {
     margin: .5rem;
-    width: 30%;
+    width: 18.5%;
     border-radius: var(--border-radius);
     background-color: var(--primary);
     transition: .5s;
@@ -191,7 +191,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 14.5rem;
+    height: 8.8rem;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
@@ -210,7 +210,7 @@
 }
 
 .destination .content .card .content-btn .main h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--color-font);
 }
 
@@ -308,7 +308,7 @@
 .article .content .card {
     margin: .5rem;
     padding: .5rem;
-    width: 30%;
+    width: 17.3%;
     border-radius: var(--border-radius);
     background-color: var(--primary);
     box-shadow: 0 0 5px var(--secondary);
@@ -325,7 +325,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 15rem;
+    height: 8.8rem;
     border-bottom: 2px solid var(--color-font);
     overflow: hidden;
 }
@@ -348,7 +348,7 @@
 }
 
 .article .content .card .content-btn .main p {
-    padding: .3rem 0;
+    padding: .1rem 0 .5rem;
     font-size: .8rem;
     color: var(--color-font);
 }
@@ -375,11 +375,11 @@
 }
 
 .support .content .brand-logo {
-    margin: .5rem .7rem;
+    margin: .5rem 1.5rem;
     display: flex;
     align-items: center;
-    width: 18%;
-    height: 8rem;
+    width: 16%;
+    height: 6rem;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
