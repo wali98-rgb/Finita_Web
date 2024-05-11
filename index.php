@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="assets/plugin/css/index.css">
     <link rel="stylesheet" href="assets/plugin/css/partials/navbar.css">
     <link rel="stylesheet" href="assets/plugin/css/partials/footer.css">
+    <!-- Mobile Device -->
+    <link rel="stylesheet" href="assets/plugin/css/responsive/mobile/index.scss">
+    <!-- Partials Mobile -->
+    <link rel="stylesheet" href="assets/plugin/css/responsive/mobile/partials/navbar.scss">
 
     <!-- My Fav Icon -->
     <link rel="icon" href="assets/img/logo/favicon.jpeg">
@@ -49,9 +53,10 @@
             <a href="pages/public/destination/destination.php">Destination</a>
             <a href="pages/public/article/article.php">Article</a>
             <a href="pages/public/gallery/gallery.php">Gallery</a>
-            <a href="pages/public/contact/contact.php">Contact</a>
+            <a class="contact-line" href="pages/public/contact/contact.php">Contact</a>
             <a href="pages/public/about/about.php">About Us</a>
         </div>
+        <button id="hamburger-menu" type="button"><i class="bi bi-list"></i></button>
     </nav>
     <!-- Navbar End -->
 

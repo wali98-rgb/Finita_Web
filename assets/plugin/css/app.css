@@ -26,3 +26,9 @@ body {
     min-height: 100vh;
     background-color: var(--bg);
 }
+
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
