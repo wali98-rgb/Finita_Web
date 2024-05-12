@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/plugin/css/partials/footer.css">
     <!-- Mobile Device -->
     <link rel="stylesheet" href="assets/plugin/css/responsive/mobile/index.scss">
+    <link rel="stylesheet" href="assets/plugin/css/responsive/mobile/css/index.css">
     <!-- Partials Mobile -->
     <link rel="stylesheet" href="assets/plugin/css/responsive/mobile/partials/scss/navbar.scss">
     <link rel="stylesheet" href="assets/plugin/css/responsive/mobile/partials/css/navbar.css">
@@ -149,13 +150,15 @@
             <!-- Mengambil Data Destinasi dari Database -->
             <?php
             $destination = mysqli_query($con, "SELECT * FROM destinations LIMIT 5");
+            $destinationMobile = mysqli_query($con, "SELECT * FROM destinations LIMIT 5");
             $destinationAll = mysqli_fetch_assoc($destination);
+            $destinationMobileAll = mysqli_fetch_assoc($destinationMobile);
 
             if ($destinationAll > 0) {
                 foreach ($destination as $des) {
             ?>
                     <!-- Card Start -->
-                    <div class="card">
+                    <div class="card card-desktop">
                         <a href="pages/public/destination/view.php?id=<?php echo $des['id_destination']; ?>&calendar=<?php echo date('Y-m-d'); ?>" class="content-btn">
                             <div class="card-img">
                                 <img src="pages/admin/destination/file_img/<?php echo $des['img_destination']; ?>" alt="Kota <?php echo ucfirst($des['img_destination']); ?>">
@@ -168,6 +171,37 @@
 
                             <div class="duration">
                                 <span>Durasi Waktu: <?php echo ucfirst($des['time1']) . " - " . ucfirst($des['time2']) . " Jam"; ?></span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card End -->
+                <?php
+                }
+            } else if ($destinationAll == 0) {
+                ?>
+                <!-- Card Start -->
+                <h1 style="display: flex; justify-content: center; width: 100%; font-style: italic; font-size: 1.3rem;">Destinasi Belum Diperbaharui.</h1>
+                <!-- Card End -->
+                <?php
+            }
+
+            if ($destinationMobileAll > 0) {
+                foreach ($destinationMobile as $ds) {
+                ?>
+                    <!-- Card Start -->
+                    <div class="card card-mobile">
+                        <a href="pages/public/destination/view.php?id=<?php echo $ds['id_destination']; ?>&calendar=<?php echo date('Y-m-d'); ?>" class="content-btn">
+                            <div class="card-img">
+                                <img src="pages/admin/destination/file_img/<?php echo $ds['img_destination']; ?>" alt="Kota <?php echo ucfirst($ds['img_destination']); ?>">
+                            </div>
+
+                            <div class="main">
+                                <h1>Kota <?php echo ucfirst($ds['destination_city']); ?></h1>
+                                <p><i class="bi bi-geo-alt"></i> <?php echo ucfirst($ds['early_city']) . " s.d " . ucfirst($ds['destination_city']); ?></p>
+                            </div>
+
+                            <div class="duration">
+                                <span>Durasi Waktu: <?php echo ucfirst($ds['time1']) . " - " . ucfirst($ds['time2']) . " Jam"; ?></span>
                             </div>
                         </a>
                     </div>
@@ -193,106 +227,112 @@
         </div>
 
         <div class="content">
-            <div class="reas">
-                <div class="icon">
-                    <i class="bi bi-ticket-perforated"></i>
-                </div>
+            <div class="wraps">
+                <div class="reas">
+                    <div class="icon">
+                        <i class="bi bi-ticket-perforated"></i>
+                    </div>
 
-                <!-- Mengambil Data Alasan dari Database -->
-                <?php
-                $reason1 = mysqli_query($con, "SELECT * FROM reasons ORDER BY id_reason DESC LIMIT 1");
-                $reason1Find = mysqli_fetch_assoc($reason1);
+                    <!-- Mengambil Data Alasan dari Database -->
+                    <?php
+                    $reason1 = mysqli_query($con, "SELECT * FROM reasons ORDER BY id_reason DESC LIMIT 1");
+                    $reason1Find = mysqli_fetch_assoc($reason1);
 
-                if ($reason1Find > 0) {
-                    foreach ($reason1 as $reas) {
-                ?>
+                    if ($reason1Find > 0) {
+                        foreach ($reason1 as $reas) {
+                    ?>
+                            <div class="title">
+                                <h3><?php echo $reas['title_reason1']; ?></h3>
+                            </div>
+                            <div class="reasons">
+                                <p><?php echo $reas['reason1']; ?></p>
+                            </div>
+                        <?php
+                        }
+                    } else if ($reason1Find == 0) {
+                        ?>
                         <div class="title">
-                            <h3><?php echo $reas['title_reason1']; ?></h3>
+                            <h3>Fleksibelitas</h3>
                         </div>
                         <div class="reasons">
-                            <p><?php echo $reas['reason1']; ?></p>
+                            <p>Fleksibel</p>
                         </div>
                     <?php
                     }
-                } else if ($reason1Find == 0) {
                     ?>
-                    <div class="title">
-                        <h3>Fleksibelitas</h3>
-                    </div>
-                    <div class="reasons">
-                        <p>Fleksibel</p>
-                    </div>
-                <?php
-                }
-                ?>
+                </div>
             </div>
 
-            <div class="reas">
-                <div class="icon">
-                    <i class="bi bi-award"></i>
-                </div>
+            <div class="wraps">
+                <div class="reas">
+                    <div class="icon">
+                        <i class="bi bi-award"></i>
+                    </div>
 
-                <!-- Mengambil Data Alasan dari Database -->
-                <?php
-                $reason2 = mysqli_query($con, "SELECT * FROM reasons ORDER BY id_reason DESC LIMIT 1");
-                $reason2Find = mysqli_fetch_assoc($reason2);
+                    <!-- Mengambil Data Alasan dari Database -->
+                    <?php
+                    $reason2 = mysqli_query($con, "SELECT * FROM reasons ORDER BY id_reason DESC LIMIT 1");
+                    $reason2Find = mysqli_fetch_assoc($reason2);
 
-                if ($reason2Find > 0) {
-                    foreach ($reason2 as $reas) {
-                ?>
+                    if ($reason2Find > 0) {
+                        foreach ($reason2 as $reas) {
+                    ?>
+                            <div class="title">
+                                <h3><?php echo $reas['title_reason2']; ?></h3>
+                            </div>
+                            <div class="reasons">
+                                <p><?php echo $reas['reason2']; ?></p>
+                            </div>
+                        <?php
+                        }
+                    } else if ($reason2Find == 0) {
+                        ?>
                         <div class="title">
-                            <h3><?php echo $reas['title_reason2']; ?></h3>
+                            <h3>Pengalaman</h3>
                         </div>
                         <div class="reasons">
-                            <p><?php echo $reas['reason2']; ?></p>
+                            <p>Pengalaman lebih banyak</p>
                         </div>
                     <?php
                     }
-                } else if ($reason2Find == 0) {
                     ?>
-                    <div class="title">
-                        <h3>Pengalaman</h3>
-                    </div>
-                    <div class="reasons">
-                        <p>Pengalaman lebih banyak</p>
-                    </div>
-                <?php
-                }
-                ?>
+                </div>
             </div>
 
-            <div class="reas">
-                <div class="icon">
-                    <i class="bi bi-trophy"></i>
-                </div>
+            <div class="wraps">
+                <div class="reas">
+                    <div class="icon">
+                        <i class="bi bi-trophy"></i>
+                    </div>
 
-                <!-- Mengambil Data Alasan dari Database -->
-                <?php
-                $reason3 = mysqli_query($con, "SELECT * FROM reasons ORDER BY id_reason DESC LIMIT 1");
-                $reason3Find = mysqli_fetch_assoc($reason3);
+                    <!-- Mengambil Data Alasan dari Database -->
+                    <?php
+                    $reason3 = mysqli_query($con, "SELECT * FROM reasons ORDER BY id_reason DESC LIMIT 1");
+                    $reason3Find = mysqli_fetch_assoc($reason3);
 
-                if ($reason3Find > 0) {
-                    foreach ($reason3 as $reas) {
-                ?>
+                    if ($reason3Find > 0) {
+                        foreach ($reason3 as $reas) {
+                    ?>
+                            <div class="title">
+                                <h3><?php echo $reas['title_reason3']; ?></h3>
+                            </div>
+                            <div class="reasons">
+                                <p><?php echo $reas['reason3']; ?></p>
+                            </div>
+                        <?php
+                        }
+                    } else if ($reason3Find == 0) {
+                        ?>
                         <div class="title">
-                            <h3><?php echo $reas['title_reason3']; ?></h3>
+                            <h3>Kualitas</h3>
                         </div>
                         <div class="reasons">
-                            <p><?php echo $reas['reason3']; ?></p>
+                            <p>Kualitas lebih baik</p>
                         </div>
                     <?php
                     }
-                } else if ($reason3Find == 0) {
                     ?>
-                    <div class="title">
-                        <h3>Kualitas</h3>
-                    </div>
-                    <div class="reasons">
-                        <p>Kualitas lebih baik</p>
-                    </div>
-                <?php
-                }
-                ?>
+                </div>
             </div>
         </div>
     </section>
@@ -345,7 +385,7 @@
     <!-- Support Session Start -->
     <section class="support">
         <div class="title">
-            <h1>Dipercaya dari Berbagai Brands Travel</h1>
+            <h1>Dipercaya dari Berbagai Brand Travel</h1>
         </div>
 
         <div class="content">

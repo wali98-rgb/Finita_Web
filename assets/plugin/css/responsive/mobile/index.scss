@@ -1,3 +1,289 @@
 @media (max-width: 450px) {
-    
+    .search-travel {
+        padding: 9rem 7% 0;
+        
+        .search {
+            form {
+                display: block;
+
+                .btn-inp {
+                    .content {
+                        padding: 1rem 0;
+                        display: flex;
+                        align-items: center;
+
+                        &:first-child {
+                            padding: 0 0 1rem;
+                        }
+
+                        .icon i {
+                            font-size: 3rem;
+                        }
+
+                        .title {
+                            width: 100%;
+                            
+                            span {
+                                select, input {
+                                    padding: 1rem;
+                                    width: 100%;
+                                    box-sizing: border-box;
+
+                                    option {
+                                        font-size: 1.7rem;
+                                    }
+                                }
+                            }
+
+                            h1 {
+                                padding: 0 0 0 1rem;
+                                font-size: 1.7rem;
+                            }
+                        }
+                    }                    
+                }
+
+                .search-btn {
+                    display: flex;
+                    justify-content: center;
+                    
+                    button {
+                        width: 100%;
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .jb {
+        padding: 4rem 7% 2rem;
+
+        .jumbotron {
+            height: 27rem;
+            background-position: 0 0rem;
+
+            .main {
+                width: 100%;
+                height: 14rem;
+
+                .content {
+                    h1 {
+                        width: 100%;
+                        font-size: 3.8rem;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        padding: .2rem 0 0;
+                        font-size: 1.3rem;
+                    }
+                }
+
+                .content-btn {
+                    display: flex;
+                    align-items: end;
+                    width: 100%;
+                    height: 11.5rem;
+
+                    a {
+                        font-size: 1.6rem;
+
+                        i {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .destination {
+        padding: 3rem 7% 7rem;
+
+        .title {
+            padding: 2rem 0;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            a {
+                justify-content: right;
+                width: 40%;
+                font-size: 1.5rem;
+
+                i {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            justify-content: start;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            
+            .card-desktop {
+                display: none;
+            }
+            
+            .card-mobile {
+                margin: 1rem;
+                display: inline-block;
+                width: 100%;
+
+                .content-btn {
+                    .card-img {
+                        padding: 1rem;
+                        width: 35rem;
+                        height: 22.8rem;
+                    }
+
+                    .main {
+                        padding: 0 0 1rem;
+                        h1 {
+                            font-size: 2rem;
+                        }
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                            font-size: 1.5rem;
+
+                            i {
+                                margin: 0 .3rem 0 0;
+                                font-size: 1.7rem;
+                            }
+                        }
+                    }
+
+                    .duration {
+                        span {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .reason {
+        padding: 6rem 7%;
+        
+        .title {
+            padding: 0;
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        .content {
+            display: block;
+
+            .wraps {
+                padding: 2rem 0;
+
+                .reas {
+                    .icon {
+                        i {
+                            font-size: 10rem;
+                        }
+                    }
+
+                    .title {
+                        h3 {
+                            font-size: 2.4rem;
+                        }
+                    }
+
+                    .reasons {
+                        p {
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .article {
+        padding: 4rem 7%;
+
+        .title {
+            h1 {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            a {
+                justify-content: right;
+                width: 40%;
+                font-size: 1.5rem;
+
+                i {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            justify-content: start;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+
+            .card {
+                margin: 1rem;
+                display: inline-block;
+                width: 100%;
+
+                .content-btn {
+                    .card-img {
+                        padding: 1rem;
+                        width: 35rem;
+                        height: 22.8rem;
+                    }
+
+                    .main {
+                        p {
+                            font-size: 1.5rem;
+                        }
+
+                        h1 {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .support {
+        padding: 4rem 7%;
+
+        .title {
+            display: flex;
+            justify-content: center;
+            
+            h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+
+        .content {
+            padding: 3rem 0 0;
+            
+            .brand-logo {
+                margin: 1rem 1.5rem;
+                padding: 0;
+                width: 25%;
+                height: 7rem;
+            }
+        }
+    }
 }

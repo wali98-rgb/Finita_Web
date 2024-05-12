@@ -172,6 +172,10 @@
     flex-wrap: wrap;
 }
 
+.destination .content .card-mobile {
+    display: none;
+}
+
 .destination .content .card {
     margin: .5rem;
     width: 18.5%;
@@ -248,26 +252,32 @@
     justify-content: space-between;
 }
 
-.reason .content .reas {
-    min-width: 30%;
-    max-width: 30%;
+.reason .content .wraps {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.reason .content .reas .icon {
+.reason .content .wraps .reas {
+    width: 100%;
+}
+
+.reason .content .wraps .reas .icon {
     display: flex;
     justify-content: center;
 }
 
-.reason .content .reas .icon i {
+.reason .content .wraps .reas .icon i {
     font-size: 5rem;
     color: var(--fourth);
 }
 
-.reason .content .reas .title {
+.reason .content .wraps .reas .title {
     padding: .5rem 0 0;
 }
 
-.reason .content .reas .reasons p {
+.reason .content .wraps .reas .reasons p {
     padding: 1rem 0 0;
     text-align: center;
     font-size: .8rem;

@@ -1,0 +1,213 @@
+@media (max-width: 450px) {
+  .search-travel {
+    padding: 9rem 7% 0;
+  }
+  .search-travel .search form {
+    display: block;
+  }
+  .search-travel .search form .btn-inp .content {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+  }
+  .search-travel .search form .btn-inp .content:first-child {
+    padding: 0 0 1rem;
+  }
+  .search-travel .search form .btn-inp .content .icon i {
+    font-size: 3rem;
+  }
+  .search-travel .search form .btn-inp .content .title {
+    width: 100%;
+  }
+  .search-travel .search form .btn-inp .content .title span select, .search-travel .search form .btn-inp .content .title span input {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .search-travel .search form .btn-inp .content .title span select option, .search-travel .search form .btn-inp .content .title span input option {
+    font-size: 1.7rem;
+  }
+  .search-travel .search form .btn-inp .content .title h1 {
+    padding: 0 0 0 1rem;
+    font-size: 1.7rem;
+  }
+  .search-travel .search form .search-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .search-travel .search form .search-btn button {
+    width: 100%;
+    font-size: 1.7rem;
+  }
+  .jb {
+    padding: 4rem 7% 2rem;
+  }
+  .jb .jumbotron {
+    height: 27rem;
+    background-position: 0 0rem;
+  }
+  .jb .jumbotron .main {
+    width: 100%;
+    height: 14rem;
+  }
+  .jb .jumbotron .main .content h1 {
+    width: 100%;
+    font-size: 3.8rem;
+    font-weight: 700;
+  }
+  .jb .jumbotron .main .content p {
+    padding: 0.2rem 0 0;
+    font-size: 1.3rem;
+  }
+  .jb .jumbotron .main .content-btn {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 11.5rem;
+  }
+  .jb .jumbotron .main .content-btn a {
+    font-size: 1.6rem;
+  }
+  .jb .jumbotron .main .content-btn a i {
+    font-size: 2rem;
+  }
+  .destination {
+    padding: 3rem 7% 7rem;
+  }
+  .destination .title {
+    padding: 2rem 0;
+  }
+  .destination .title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .destination .title a {
+    justify-content: right;
+    width: 40%;
+    font-size: 1.5rem;
+  }
+  .destination .title a i {
+    font-size: 1.7rem;
+  }
+  .destination .content {
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .destination .content .card-desktop {
+    display: none;
+  }
+  .destination .content .card-mobile {
+    margin: 1rem;
+    display: inline-block;
+    width: 100%;
+  }
+  .destination .content .card-mobile .content-btn .card-img {
+    padding: 1rem;
+    width: 35rem;
+    height: 22.8rem;
+  }
+  .destination .content .card-mobile .content-btn .main {
+    padding: 0 0 1rem;
+  }
+  .destination .content .card-mobile .content-btn .main h1 {
+    font-size: 2rem;
+  }
+  .destination .content .card-mobile .content-btn .main p {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .destination .content .card-mobile .content-btn .main p i {
+    margin: 0 0.3rem 0 0;
+    font-size: 1.7rem;
+  }
+  .destination .content .card-mobile .content-btn .duration span {
+    font-size: 1.3rem;
+  }
+  .reason {
+    padding: 6rem 7%;
+  }
+  .reason .title {
+    padding: 0;
+  }
+  .reason .title h1 {
+    font-size: 3rem;
+  }
+  .reason .content {
+    display: block;
+  }
+  .reason .content .wraps {
+    padding: 2rem 0;
+  }
+  .reason .content .wraps .reas .icon i {
+    font-size: 10rem;
+  }
+  .reason .content .wraps .reas .title h3 {
+    font-size: 2.4rem;
+  }
+  .reason .content .wraps .reas .reasons p {
+    font-size: 1.7rem;
+  }
+  .article {
+    padding: 4rem 7%;
+  }
+  .article .title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .article .title a {
+    justify-content: right;
+    width: 40%;
+    font-size: 1.5rem;
+  }
+  .article .title a i {
+    font-size: 1.7rem;
+  }
+  .article .content {
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .article .content .card {
+    margin: 1rem;
+    display: inline-block;
+    width: 100%;
+  }
+  .article .content .card .content-btn .card-img {
+    padding: 1rem;
+    width: 35rem;
+    height: 22.8rem;
+  }
+  .article .content .card .content-btn .main p {
+    font-size: 1.5rem;
+  }
+  .article .content .card .content-btn .main h1 {
+    font-size: 2rem;
+  }
+  .support {
+    padding: 4rem 7%;
+  }
+  .support .title {
+    display: flex;
+    justify-content: center;
+  }
+  .support .title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .support .content {
+    padding: 3rem 0 0;
+  }
+  .support .content .brand-logo {
+    margin: 1rem 1.5rem;
+    padding: 0;
+    width: 25%;
+    height: 7rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
