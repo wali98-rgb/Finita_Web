@@ -48,11 +48,11 @@
   }
   .jb .jumbotron .main {
     width: 100%;
-    height: 14rem;
+    height: 12rem;
   }
   .jb .jumbotron .main .content h1 {
     width: 100%;
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-weight: 700;
   }
   .jb .jumbotron .main .content p {
@@ -66,10 +66,10 @@
     height: 11.5rem;
   }
   .jb .jumbotron .main .content-btn a {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .jb .jumbotron .main .content-btn a i {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .destination {
     padding: 3rem 7% 7rem;
@@ -78,12 +78,13 @@
     padding: 2rem 0;
   }
   .destination .title h1 {
-    font-size: 3rem;
+    width: 30rem;
+    font-size: 2.8rem;
     font-weight: 700;
   }
   .destination .title a {
     justify-content: right;
-    width: 40%;
+    width: 48%;
     font-size: 1.5rem;
   }
   .destination .title a i {
@@ -105,8 +106,8 @@
   }
   .destination .content .card-mobile .content-btn .card-img {
     padding: 1rem;
-    width: 35rem;
-    height: 22.8rem;
+    width: 30rem;
+    height: 19.5rem;
   }
   .destination .content .card-mobile .content-btn .main {
     padding: 0 0 1rem;
@@ -154,12 +155,13 @@
     padding: 4rem 7%;
   }
   .article .title h1 {
-    font-size: 3rem;
+    width: 30rem;
+    font-size: 2.8rem;
     font-weight: 700;
   }
   .article .title a {
     justify-content: right;
-    width: 40%;
+    width: 48%;
     font-size: 1.5rem;
   }
   .article .title a i {
@@ -178,8 +180,8 @@
   }
   .article .content .card .content-btn .card-img {
     padding: 1rem;
-    width: 35rem;
-    height: 22.8rem;
+    width: 30rem;
+    height: 19.5rem;
   }
   .article .content .card .content-btn .main p {
     font-size: 1.5rem;
@@ -205,7 +207,7 @@
   .support .content .brand-logo {
     margin: 1rem 1.5rem;
     padding: 0;
-    width: 25%;
+    width: 24.5%;
     height: 7rem;
   }
 }
