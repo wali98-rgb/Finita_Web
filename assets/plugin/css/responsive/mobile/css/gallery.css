@@ -1,0 +1,123 @@
+@media (max-width: 450px) {
+  .jb {
+    padding: 4rem 0 0;
+    background-size: 100%;
+    background-position: 0 100%;
+    height: 42vh;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .jb .jumbotron h1 {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .jb .jumbotron p {
+    padding: 0.2rem 0 0;
+    font-size: 1.3rem;
+  }
+  .gallery {
+    padding: 4rem 7% 0;
+  }
+  .gallery .title h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .gallery .content {
+    padding: 2rem 0 0;
+  }
+  .gallery .content .card {
+    width: 47%;
+  }
+  .gallery .content .card .card-main p {
+    font-size: 1.2rem;
+  }
+  .gallery .content .card .card-main h1 button {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .destination {
+    padding: 3rem 7% 7rem;
+  }
+  .destination .title {
+    padding: 2rem 0;
+  }
+  .destination .title h1 {
+    width: 30rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  .destination .title a {
+    justify-content: right;
+    width: 48%;
+    font-size: 1.5rem;
+  }
+  .destination .title a i {
+    font-size: 1.7rem;
+  }
+  .destination .content {
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .destination .content .card {
+    margin: 1rem;
+    display: inline-block;
+    width: 100%;
+  }
+  .destination .content .card .content-btn .card-img {
+    padding: 1rem;
+    width: 30rem;
+    height: 19.5rem;
+  }
+  .destination .content .card .content-btn .main {
+    padding: 0 0 1rem;
+  }
+  .destination .content .card .content-btn .main h1 {
+    font-size: 2rem;
+  }
+  .destination .content .card .content-btn .main p {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .destination .content .card .content-btn .main p i {
+    margin: 0 0.3rem 0 0;
+    font-size: 1.7rem;
+  }
+  .destination .content .card .content-btn .duration span {
+    font-size: 1.3rem;
+  }
+  .popup {
+    padding: 1rem;
+    width: 80%;
+  }
+  .popup h1 {
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .popup .data-container .data-figure .data-figure-img img {
+    height: 20rem;
+  }
+  .popup .data-container .data-figure .img-other {
+    width: 17%;
+    height: 10rem;
+  }
+  .popup .data-container span {
+    font-size: 1.2rem;
+  }
+  .popup .data-container h3 {
+    font-size: 2.2rem;
+  }
+  .popup .data-container p {
+    font-size: 1.5rem;
+  }
+  .popup .close-btn button {
+    padding: 0.5rem 4rem;
+    font-size: 1.7rem;
+  }
+}
+
+/*# sourceMappingURL=gallery.css.map */
