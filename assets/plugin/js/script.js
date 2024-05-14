@@ -8,9 +8,16 @@ document.querySelector('#hamburger-menu').onclick = () => {
 
 // Saat diklik diluar navbar, navnya ilang
 const hamburger = document.querySelector('#hamburger-menu')
+const popup = document.querySelector('#popup')
 
 document.addEventListener('click', function(event) {
     if(!hamburger.contains(event.target) && !navbarNav.contains(event.target)) {
         navbarNav.classList.remove('active')
+    }
+})
+
+document.addEventListener('click', function(event) {
+    if(!popup.contains(event.target)) {
+        popup.style.display = 'none';
     }
 })

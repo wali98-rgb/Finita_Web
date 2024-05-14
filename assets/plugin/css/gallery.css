@@ -170,11 +170,14 @@
     font-weight: 700;
 }
 
-.gallery .content .card .card-main h1 a {
+.gallery .content .card .card-main h1 button {
+    font-size: 1.2rem;
+    border: none;
+    background-color: none;
     color: var(--color-font);
 }
 
-.gallery .content .card .card-main h1 a:hover {
+.gallery .content .card .card-main h1 button:hover {
     text-decoration: underline;
 }
 /* Gallery Session CSS */

@@ -19,6 +19,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../../../assets/plugin/css/app.css">
     <link rel="stylesheet" href="../../../assets/plugin/css/gallery.css">
+    <link rel="stylesheet" href="../../../assets/plugin/css/popup.css">
     <link rel="stylesheet" href="../../../assets/plugin/css/partials/navbar.css">
     <link rel="stylesheet" href="../../../assets/plugin/css/partials/footer.css">
     <link rel="stylesheet" href="../../../assets/plugin/css/partials/pagination.css">
@@ -91,8 +92,10 @@
     <!-- Popup -->
     <div id="popup" class="popup">
         <h1>Detail Dokumentasi</h1>
-        <div id="data-container"></div>
-        <button onclick="sembunyikanPopup()">Tutup</button>
+        <div id="data-container" class="data-container"></div>
+        <div class="close-btn">
+            <button onclick="sembunyikanPopup()">CLOSE</button>
+        </div>
     </div>
 
     <!-- Gallery Session Start -->

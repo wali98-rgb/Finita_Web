@@ -1,0 +1,87 @@
+/* Pop Up Session */
+.popup {
+    width: 70%;
+    border-radius: var(--border-radius);
+    transition: 1s;
+}
+
+.popup h1 {
+    /* padding: 1rem 1rem 1rem 0; */
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-font);
+    text-align: center;
+}
+
+.popup .data-container .data-figure .data-figure-img {
+    padding: 0 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid var(--color-font);
+}
+
+.popup .data-container .data-figure .data-figure-img img {
+    width: 100%;
+    height: 15rem;
+    object-fit: contain;
+    border-radius: .3rem;
+}
+
+.popup .data-container .data-figure .img-other {
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 10%;
+    height: 5rem;
+    border-radius: var(--border-radius);
+}
+
+.popup .data-container .data-figure .img-other img:first-child {
+    margin: 1rem .5rem 1rem 0;
+}
+
+.popup .data-container .data-figure .img-other img {
+    margin: 1rem .5rem;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+.popup .data-container span {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.popup .data-container h3 {
+    padding: .5rem 0 .3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.popup .data-container p {
+    padding: 0 0 1rem;
+    text-align: justify;
+    font-size: .9rem;
+}
+
+.popup .close-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.popup .close-btn button {
+    padding: .3rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--fourth);
+    color: var(--color-font2);
+    border-radius: var(--border-radius);
+    border: none;
+}
+/* Pop Up Session */
