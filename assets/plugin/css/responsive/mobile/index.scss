@@ -1,7 +1,7 @@
 @media (max-width: 450px) {
     .search-travel {
         padding: 9rem 7% 0;
-        
+
         .search {
             form {
                 display: block;
@@ -22,9 +22,11 @@
 
                         .title {
                             width: 100%;
-                            
+
                             span {
-                                select, input {
+
+                                select,
+                                input {
                                     padding: 1rem;
                                     width: 100%;
                                     box-sizing: border-box;
@@ -40,13 +42,13 @@
                                 font-size: 1.7rem;
                             }
                         }
-                    }                    
+                    }
                 }
 
                 .search-btn {
                     display: flex;
                     justify-content: center;
-                    
+
                     button {
                         width: 100%;
                         font-size: 1.7rem;
@@ -126,12 +128,8 @@
             justify-content: start;
             flex-wrap: nowrap;
             overflow-x: auto;
-            
-            .card-desktop {
-                display: none;
-            }
-            
-            .card-mobile {
+
+            .card {
                 margin: 1rem;
                 display: inline-block;
                 width: 100%;
@@ -145,6 +143,7 @@
 
                     .main {
                         padding: 0 0 1rem;
+
                         h1 {
                             font-size: 2rem;
                         }
@@ -173,9 +172,10 @@
 
     .reason {
         padding: 6rem 7%;
-        
+
         .title {
             padding: 0;
+
             h1 {
                 font-size: 3rem;
             }
@@ -269,7 +269,7 @@
         .title {
             display: flex;
             justify-content: center;
-            
+
             h1 {
                 font-size: 3rem;
                 font-weight: 700;
@@ -279,7 +279,7 @@
 
         .content {
             padding: 3rem 0 0;
-            
+
             .brand-logo {
                 margin: 1rem 1.5rem;
                 padding: 0;

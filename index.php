@@ -150,15 +150,13 @@
             <!-- Mengambil Data Destinasi dari Database -->
             <?php
             $destination = mysqli_query($con, "SELECT * FROM destinations LIMIT 5");
-            $destinationMobile = mysqli_query($con, "SELECT * FROM destinations LIMIT 5");
             $destinationAll = mysqli_fetch_assoc($destination);
-            $destinationMobileAll = mysqli_fetch_assoc($destinationMobile);
 
             if ($destinationAll > 0) {
                 foreach ($destination as $des) {
             ?>
                     <!-- Card Start -->
-                    <div class="card card-desktop">
+                    <div class="card">
                         <a href="pages/public/destination/view.php?id=<?php echo $des['id_destination']; ?>&calendar=<?php echo date('Y-m-d'); ?>" class="content-btn">
                             <div class="card-img">
                                 <img src="pages/admin/destination/file_img/<?php echo $des['img_destination']; ?>" alt="Kota <?php echo ucfirst($des['img_destination']); ?>">
@@ -171,37 +169,6 @@
 
                             <div class="duration">
                                 <span>Durasi Waktu: <?php echo ucfirst($des['time1']) . " - " . ucfirst($des['time2']) . " Jam"; ?></span>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Card End -->
-                <?php
-                }
-            } else if ($destinationAll == 0) {
-                ?>
-                <!-- Card Start -->
-                <h1 style="display: flex; justify-content: center; width: 100%; font-style: italic; font-size: 1.3rem;">Destinasi Belum Diperbaharui.</h1>
-                <!-- Card End -->
-                <?php
-            }
-
-            if ($destinationMobileAll > 0) {
-                foreach ($destinationMobile as $ds) {
-                ?>
-                    <!-- Card Start -->
-                    <div class="card card-mobile">
-                        <a href="pages/public/destination/view.php?id=<?php echo $ds['id_destination']; ?>&calendar=<?php echo date('Y-m-d'); ?>" class="content-btn">
-                            <div class="card-img">
-                                <img src="pages/admin/destination/file_img/<?php echo $ds['img_destination']; ?>" alt="Kota <?php echo ucfirst($ds['img_destination']); ?>">
-                            </div>
-
-                            <div class="main">
-                                <h1>Kota <?php echo ucfirst($ds['destination_city']); ?></h1>
-                                <p><i class="bi bi-geo-alt"></i> <?php echo ucfirst($ds['early_city']) . " s.d " . ucfirst($ds['destination_city']); ?></p>
-                            </div>
-
-                            <div class="duration">
-                                <span>Durasi Waktu: <?php echo ucfirst($ds['time1']) . " - " . ucfirst($ds['time2']) . " Jam"; ?></span>
                             </div>
                         </a>
                     </div>

@@ -19,12 +19,14 @@
   .search-travel .search form .btn-inp .content .title {
     width: 100%;
   }
-  .search-travel .search form .btn-inp .content .title span select, .search-travel .search form .btn-inp .content .title span input {
+  .search-travel .search form .btn-inp .content .title span select,
+  .search-travel .search form .btn-inp .content .title span input {
     padding: 1rem;
     width: 100%;
     box-sizing: border-box;
   }
-  .search-travel .search form .btn-inp .content .title span select option, .search-travel .search form .btn-inp .content .title span input option {
+  .search-travel .search form .btn-inp .content .title span select option,
+  .search-travel .search form .btn-inp .content .title span input option {
     font-size: 1.7rem;
   }
   .search-travel .search form .btn-inp .content .title h1 {
@@ -96,35 +98,32 @@
     flex-wrap: nowrap;
     overflow-x: auto;
   }
-  .destination .content .card-desktop {
-    display: none;
-  }
-  .destination .content .card-mobile {
+  .destination .content .card {
     margin: 1rem;
     display: inline-block;
     width: 100%;
   }
-  .destination .content .card-mobile .content-btn .card-img {
+  .destination .content .card .content-btn .card-img {
     padding: 1rem;
     width: 30rem;
     height: 19.5rem;
   }
-  .destination .content .card-mobile .content-btn .main {
+  .destination .content .card .content-btn .main {
     padding: 0 0 1rem;
   }
-  .destination .content .card-mobile .content-btn .main h1 {
+  .destination .content .card .content-btn .main h1 {
     font-size: 2rem;
   }
-  .destination .content .card-mobile .content-btn .main p {
+  .destination .content .card .content-btn .main p {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
   }
-  .destination .content .card-mobile .content-btn .main p i {
+  .destination .content .card .content-btn .main p i {
     margin: 0 0.3rem 0 0;
     font-size: 1.7rem;
   }
-  .destination .content .card-mobile .content-btn .duration span {
+  .destination .content .card .content-btn .duration span {
     font-size: 1.3rem;
   }
   .reason {
