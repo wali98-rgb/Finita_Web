@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../../../assets/plugin/css/partials/pagination.css">
     <!-- Mobile Device -->
     <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/gallery.scss">
-    <!-- <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/css/gallery.css"> -->
+    <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/css/gallery.css">
     <!-- Partials Mobile -->
     <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/partials/scss/navbar.scss">
     <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/partials/css/navbar.css">
