@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="../../../assets/plugin/css/partials/footer.css">
     <link rel="stylesheet" href="../../../assets/plugin/css/partials/pagination.css">
     <!-- Mobile Device -->
-    <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/index.scss">
+    <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/gallery.scss">
+    <!-- <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/css/gallery.css"> -->
     <!-- Partials Mobile -->
     <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/partials/scss/navbar.scss">
     <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/partials/css/navbar.css">
@@ -143,7 +144,7 @@
                         <div class="card-main">
                             <p>Diposting: <?php echo $dat['date_documentation']; ?></p>
                             <h1>
-                                <button class="show-popup" data-id="<?php echo $dat['id_documentations']; ?>"><?php echo $dat['title_documentation']; ?></button>
+                                <button class="show-popup" data-id="<?php echo $dat['id_documentations']; ?>"><?php echo ucfirst($dat['title_documentation']); ?></button>
                             </h1>
                         </div>
                     </div>
