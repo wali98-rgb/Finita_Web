@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="../../../assets/plugin/css/partials/footer.css">
     <!-- Mobile Device -->
     <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/index.scss">
+    <!-- Laptop Device -->
+    <link rel="stylesheet" href="../../../assets/plugin/css/responsive/laptop/laptop.css">
     <!-- Partials Mobile -->
     <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/partials/scss/navbar.scss">
     <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/partials/css/navbar.css">

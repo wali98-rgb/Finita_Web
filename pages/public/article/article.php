@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="../../../assets/plugin/css/partials/pagination.css">
     <!-- Mobile Device -->
     <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/index.scss">
+    <!-- Laptop Device -->
+    <link rel="stylesheet" href="../../../assets/plugin/css/responsive/laptop/laptop.css">
     <!-- Partials Mobile -->
     <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/partials/scss/navbar.scss">
     <link rel="stylesheet" href="../../../assets/plugin/css/responsive/mobile/partials/css/navbar.css">
@@ -183,11 +185,11 @@
                 foreach ($gallery as $gal) {
             ?>
                     <div class="content-img">
-                        <img src="../../admin/documentation/file_img/<?php echo $gal['img_documentation']; ?>" alt="Dokumentasi <?php echo $gal['title_documentation']; ?>">
+                        <img src="../../admin/documentation/file_img/img/<?php echo $gal['img_documentation']; ?>" alt="Dokumentasi <?php echo $gal['title_documentation']; ?>">
                     </div>
 
                     <div class="content-main">
-                        <h1><?php echo $gal['title_documentation']; ?></h1>
+                        <h1><?php echo ucfirst($gal['title_documentation']); ?></h1>
                         <p class="date">Diposting: <?php echo $gal['date_documentation']; ?></p>
                         <p class="desc"><?php echo $gal['desc_documentation']; ?></p>
                         <span>FINITA TOUR & TRAVEL</span>
