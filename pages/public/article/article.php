@@ -122,8 +122,8 @@
                             </div>
 
                             <div class="body">
-                                <p class="desc"><?php echo substr($dat['desc_article'], 0, 150) . "..."; ?></p>
-                                <p class="btn"><a href="view.php?id=<?php echo $dat['id_articles']; ?>">Lihat Detail</a></p>
+                                <?php echo substr($dat['desc_article'], 0, 150); ?>
+                                <span class="btn"><a href="view.php?id=<?php echo $dat['id_articles']; ?>">Lihat Detail</a></span>
                             </div>
                         </div>
                     </div>
@@ -216,7 +216,7 @@
         <div class="content">
             <!-- Mengambil Data Destinasi dari Database -->
             <?php
-            $destination = mysqli_query($con, "SELECT * FROM destinations LIMIT 3");
+            $destination = mysqli_query($con, "SELECT * FROM destinations LIMIT 5");
             $destinationAll = mysqli_fetch_assoc($destination);
 
             if ($destinationAll > 0) {
